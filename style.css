@@ -4,11 +4,176 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #F3FBFB;
 }
 
-h1{
-    text-align: center;
-    font-weight: 600;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.icono{
+    /* image 3 2 */
+    position: absolute;
+    width: 114.67px;
+    height: 126.92px;
+    left: 150px;
+    top: 23.08px;
+    
+    background: url(/img/Icono.png);
+    background-size: contain;
+}
+
+/* Celeste */
+.celeste {
+position: absolute;
+width: 241.28px;
+height: 81px;
+left: 286px;
+top: 46.04px;
+
+font-family: 'Bauhaus 93';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 93px;
+text-align: center;
+
+color: #272343;
+}
+
+/* Ellipse 3 */
+.ellipse3 {
+    position: absolute;
+    width: 1263.67px;
+    height: 771.09px;
+    left: 776.97px;
+    top: -199.48px;
+    z-index: -1;
+    
+    background: #BAE8E8;
+}
+
+/* Ellipse 4 */
+.ellipse4 {
+position: absolute;
+width: 635.18px;
+height: 737.09px;
+left: -125.65px;
+top: 1297.4px;
+
+background: linear-gradient(153.26deg, #BAE8E8 43.93%, #FF8BD2 138.03%);
+transform: rotate(-135.28deg);
+}
+
+/* Hello */
+.hello{
+position: absolute;
+width: 719px;
+height: 314.39px;
+left: 816.5px;
+top: 186.06px;
+
+font-family: 'Bauhaus 93';
+font-style: normal;
+font-weight: 400;
+font-size: 160px;
+line-height: 95.04%;
+/* or 152px */
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #272343;
+}
+
+/* World!! */
+.world{
+position: absolute;
+width: 719px;
+height: 314.39px;
+left: 836px;
+top: 343.26px;
+
+font-family: 'Bauhaus 93';
+font-style: normal;
+font-weight: 400;
+font-size: 180px;
+line-height: 95.04%;
+/* or 171px */
+
+display: flex;
+align-items: center;
+justify-content: center;
+color: #272343;
+}
+
+/* Rectangle 23 */
+.rectangle23{
+    position: absolute;
+    width: 6px;
+    height: 200px;
+    left: 1108px;
+    top: 659.67px;
+    
+    background: #FFDD80;
+}
+
+/* I´m Celeste Davalos */
+.r23p1{
+    position: absolute;
+    width: 338px;
+    height: 51px;
+    left: 1134.11px;
+    top: 671.67px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    /* identical to box height */    
+    color: #272343;
+}
+
+.r23p2{
+/* A Graphic Designer, UI/UX Designer */
+position: absolute;
+width: 603px;
+height: 51px;
+left: 1134.11px;
+top: 722.67px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height */
+color: #272343;
+}
+
+.r23p3{
+    /* and an Illustrator. */
+position: absolute;
+width: 303px;
+height: 51px;
+left: 1134.11px;
+top: 773.67px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height */
+color: #272343;
+}
+
+/* Rectangle 24 */
+.rectangle24{
+position: absolute;
+width: 709.57px;
+height: 705.46px;
+left: 215px;
+top: 195px;
+
+background: url(/img/selfie2.png);
+background-size: contain;
 }
