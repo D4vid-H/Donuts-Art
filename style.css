@@ -37,6 +37,123 @@ text-align: center;
 color: #272343;
 }
 
+.btnAbout{
+    /* Frame 14 */
+box-sizing: border-box;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+
+position: absolute;
+width: 217px;
+height: 71px;
+left: 1144px;
+top: 56.04px;
+
+border: 3px solid #FF8BD2;
+border-radius: 15px 0px;
+}
+.txtAbout{
+    /* About me */
+width: 169px;
+height: 51px;
+border: none;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height */
+color: #272343;
+background: #BAE8E8;
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.btnWork{
+    /* Frame 15 */
+    /* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+
+position: absolute;
+width: 136px;
+/* height: 71px; */
+left: 1408.8px;
+top: 56.04px;
+
+border-radius: 0px;
+}
+.txtWork{
+width: 88px;
+height: 51px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height */
+color: #272343;
+border: none;
+background: #BAE8E8;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.btnContact{
+/* Frame 16 */
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+
+position: absolute;
+width: 187px;
+/* height: 71px; */
+left: 1592.61px;
+top: 56.04px;
+}
+
+.txtContact{
+/* Contact */
+width: 139px;
+height: 51px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height */
+color: #272343;
+border: none;
+background: #BAE8E8;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
 /* Ellipse 3 */
 .ellipse3 {
     position: absolute;
@@ -54,11 +171,46 @@ color: #272343;
 position: absolute;
 width: 635.18px;
 height: 737.09px;
-left: -125.65px;
-top: 1297.4px;
+left: -398.65px;
+right: 1527px;
+top: 422.72px;
+/* bottom: 3124.6px; */
+z-index: -1;
 
 background: linear-gradient(153.26deg, #BAE8E8 43.93%, #FF8BD2 138.03%);
 transform: rotate(-135.28deg);
+}
+
+.homeInstagram{
+/* bxl:instagram-alt */
+position: absolute;
+width: 49px;
+height: 50px;
+left: 78.81px;
+right: 1816.69px;
+top: 760.7px;
+bottom: 3648.79px;
+}
+
+.homeBehance{
+    /* Vector */
+position: absolute;
+left: 74.04px;
+right: 1795.96px;
+top: 828.42px;
+bottom: 3562.33px;
+}
+
+.homeTweeter{
+/* Vector */
+position: absolute;
+width: 49px;
+height: 50px;
+left: 74.64px;
+right: 1798.06;
+top: 899.72px;
+bottom: 3483.82px;
+
 }
 
 /* Hello */
@@ -176,4 +328,76 @@ top: 195px;
 
 background: url(/img/selfie2.png);
 background-size: contain;
+}
+
+.rectangle40{
+    /* Rectangle 40 */
+position: absolute;
+height: 1280px;
+left: 0px;
+top: 110px;    
+}
+
+.rectangle2{
+    /* Rectangle 2 */
+box-sizing: border-box;
+
+position: absolute;
+width: 1405px;
+height: 745px;
+left: 150px;
+top: 1166px;
+z-index: -1;
+
+background: #FFDD80;
+border-radius: 0px 0px 0px 330.342px;
+}
+
+.r2title{
+    /* About me */
+position: absolute;
+width: 169px;
+height: 51px;
+left: 176px;
+right: 1060px;
+top: 72.47px;
+bottom: 621.53px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 51px;
+/* identical to box height */
+color: #272343;
+}
+
+.r2txt{
+position: absolute;
+width: 642px;
+height: 373px;
+left: 1726x;
+right: 587px;
+top: 171.53px;
+bottom: 200.47px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+
+color: #272343;
+}
+
+.imgCeleste{
+    /* Rectangle 22 */
+position: absolute;
+width: 668px;
+height: 820.86px;
+left: 1102px;
+top: 1141px;
+
+background: url(./img/celeste.png);
+border-radius: 288.605px;
 }
