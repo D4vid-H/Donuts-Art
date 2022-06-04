@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3FBFB;
+}
+
+/*-------Header-----------------------------------*/
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #45C1F0;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+}
+
+.header__logo{
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo--img{
+    width: 4vw;
+}
+
+.header__logo--text{
+    margin-left: 1rem;   
+    width: 10rem;
+    font-family: 'Bauhaus 93';
+    font-size: 2.5vh;
+    text-justify: center;
+}
+
+nav{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'poppins';
+    font-size: 2vh;    
+}
+
+nav a{
+    margin-left: 2rem;
+    width: 7rem;
+
+}
+
+.social{
+    margin-right: 10%;
+    /*width: 2rem;*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+/*------------------Main---------------------------*/
+
+.main{
+    background-color: #45C1F0;    
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 17%;
+}
+
+.container__text--center{
+    transform: translatex(-40%);
+}
+
+.container__text--center h2{
+
+    margin-bottom: 2rem;
+    font-family: 'Bauhaus 93';
+    text-align: center;
+    font-size:  4rem;
+}
+
+.container__text--center h3{
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: 'nunito';
+    font-size:  1.2rem;
+}
+
+.container__text--center button {
+    border: 1px solid #272343;
+    border-radius: 30px;
+    font-family: 'nunito';
+    background-color: transparent;
+}
+
+.container__text--center button  p{
+    padding: 1rem;
+    width: 14rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.container__img{
+    display: flex;
+    align-items: flex-end;
+}
+
+.main--img{
+    width: 60vw;   
+}
+
+/*------------------About me---------------------------*/
+
+.about{
+    height: 90vh;  
+    display: flex;
+    flex-direction: column;
+}
+
+.about__content{
+    height: 70%;
+}
+
+
+.containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerSkills{
+    margin: 1rem;
+    width: 20%;
+    height: 40vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.container--pink{
+    background-color: #FF8BD2;
+}
+
+.container--yellow{
+    background-color: #FFDD80;
+}
+
+.container--blue{
+    background-color: #45C1F0;
+}
+
+
+.containerSkills h3{
+    font-family: 'Bauhaus 93';
+}
+.containerSkills p{
+    font-family: 'nunito';
+    padding: 2rem;
+}
+
+.containerSkills img{
+    width: 50%;
+}
