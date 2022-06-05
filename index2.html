@@ -9,11 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <style type="text/css" media="screen, print">
         @font-face {
             font-family: "Bauhaus 93";
             src: url("font/BAUHS93.ttf");
           }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Nunito:wght@200&display=swap');
     </style>
 </head>
 <body>
@@ -58,10 +66,22 @@
     <section class="about">
         <div>
             <div class="about__content">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et pharetra, aliquet diam. Etiam aliquam 
-                    aenean urna orci adipiscing eu sed nisl. Tortor ultricies mauris tempus aliquam. Pharetra, vel,
-                     rhoncus interdum porttitor mattis sit vestibulum.</p>
+                <div class="about__content--text">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et pharetra, aliquet diam. Etiam aliquam 
+                        aenean urna orci adipiscing eu sed nisl. Tortor ultricies mauris tempus aliquam. Pharetra, vel,
+                        rhoncus interdum porttitor mattis sit vestibulum.</p>
+                </div>    
+                <div class="about__content--carr"> 
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/Rectangle 3.png"></div>
+                            <div class="swiper-slide"><img src="img/Rectangle 4.png"></div>         
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
             <div class="containers">
                 <div class="containerSkills container--pink">
@@ -85,16 +105,92 @@
 
         </div>
     </section>
-    <section>
+    <section class="work">
+        <div class="work__header">
+            <div>
+                <h2>My work</h2>
+                <p>know more about what i do</p>
+            </div>
+            <div>
+                <button>All</button>
+                <button>Illustrations</button>
+                <button>Graphic Desing</button>
+                <button>Ux/Ui Desing</button>
+            </div>
+        </div>
+        <div>
 
+        </div>
     </section>
-    <section>
-
+    <section class="commisions">
+        <div>
+            <h2>Comissions are open!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            <button>Contact me!</button>
+        </div>
+        <div>
+            <div>
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <h3>Celeste.D.012@hotmail.com</h3>
+            </div>
+            <div>
+                <form>
+                    <P>
+                    <LABEL for="nombre">Nombre: </LABEL>
+                              <INPUT type="text" id="nombre"><BR>
+                    <LABEL for="email">E-Mail: </LABEL>
+                              <INPUT type="text" id="email"><BR>
+                    <LABEL for="message">Message: </LABEL>
+                              <INPUT type="text" id="message"><BR>
+                    <INPUT type="submit" value="Enviar"> <INPUT type="reset">
+                    </P>
+                </form>
+            </div>
+        </div>
     </section>
     <footer>
-
+        <h3>Celeste Davalos © 2022 </h3>
+        <div class="social__footer">
+            <a href="">
+                <img  src="img/Img-Behance.png">
+            </a> 
+            <a href="">
+                <img  src="img/Img-Instagram.png">
+            </a> 
+            <a href="">
+                <img  src="img/Img-LinkedIn.png">
+            </a> 
+            <a href="">
+                <img src="img/Img-Twitter.png">
+            </a> 
+        </div>
     </footer>
 
-<script src="main.js"></script>
+<script src="main2.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</script>
 </body>
 </html>

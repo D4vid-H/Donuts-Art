@@ -100,14 +100,14 @@ nav a{
 .container__text--center h3{
     margin-bottom: 10%;
     text-align: center;
-    font-family: 'nunito';
+    font-family: 'Nunito', sans-serif;
     font-size:  1.2rem;
 }
 
 .container__text--center button {
     border: 1px solid #272343;
     border-radius: 30px;
-    font-family: 'nunito';
+    font-family:'Nunito', sans-serif;
     background-color: transparent;
 }
 
@@ -133,22 +133,80 @@ nav a{
     height: 90vh;  
     display: flex;
     flex-direction: column;
+    margin-top: 10vh;
 }
 
 .about__content{
-    height: 70%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.about__content--text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.about__content--text h2{
+    font-family: 'Bauhaus 93';
+    margin-bottom: 2rem;
+}
+
+.about__content--text p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.about__content--carr{
+    background-color: #FF8BD2;
+   
+}
+
+.swiper {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 .containers{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 .containerSkills{
     margin: 1rem;
-    width: 20%;
+    width: 25%;
     height: 40vh;
     border-radius: 20px;
     display: flex;
@@ -173,10 +231,61 @@ nav a{
     font-family: 'Bauhaus 93';
 }
 .containerSkills p{
-    font-family: 'nunito';
+    font-family: 'Nunito', sans-serif;
     padding: 2rem;
 }
 
 .containerSkills img{
     width: 50%;
+}
+
+/*------------------My work---------------------------*/
+
+.work{
+    height: 90vh;  
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.work__header{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-color:  #F3FBFB;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__header h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bauhaus 93';
+}
+
+.work__header p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
+
+.work__header button{
+    font-family: 'Nunito', sans-serif;
+    width: 10rem;
+    font-size: 1.2rem;
+    border: 1px solid #272343;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: .5rem;
+}
+
+
+/*------------------Comissions---------------------------*/
+
+.comissions{
+    height: 90vh;  
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
 }
