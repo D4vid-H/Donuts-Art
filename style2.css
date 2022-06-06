@@ -250,6 +250,7 @@ nav a{
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
+    background-color: #F3FBFB;
 }
 
 .work__header{
@@ -308,9 +309,11 @@ nav a{
 }
 
 .com__open{
-    background-image:  url("img/Boceto\ comisiones2\ 1.png");
+    background-color: #272343;
+    color: #F3FBFB;
     height: 40vh;
     display: flex;
+    margin-top: 4vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -331,7 +334,8 @@ nav a{
     font-family: 'Nunito', sans-serif;
     width: 15rem;
     font-size: 1.2rem;
-    border: 1px solid #272343;
+    border: 1px solid white;
+    color: white;
     background-color: transparent;
     border-radius: 10px;
     margin-left: 2rem;
@@ -340,7 +344,7 @@ nav a{
 }
 
 .com__form {
-    background-color: #45C1F0;
+    background-color: #FFDD80;
     display: flex;
     justify-content: space-around;
     height: 60vh;
