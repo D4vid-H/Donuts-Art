@@ -192,7 +192,8 @@ body {
   left: 0px;
   top: 142px;
 
-  background: pink;
+  /* background: pink; */
+  background: center fixed no-repeat url('https://tinyurl.com/jp56xcg');
 }
 
 .headTxt1 {
@@ -309,7 +310,24 @@ body {
   color: #272343;
 }
 
+.comissContentTextGallery {
+  /* Texto - H1 - Navbar */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
 .comissContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 452px;
+  height: 143px;
   /* Texto - H1 - Navbar */
   font-family: "Poppins";
   font-style: normal;
@@ -356,6 +374,10 @@ body {
   /* Azul - Textos */
   border: 3px solid #272343;
   border-radius: 50px;
+}
+
+.btnQuote:hover{
+  background-color: #151325;
 }
 
 .noteComission {
@@ -519,97 +541,346 @@ body {
   right: 599.5px;
 }
 
-.comissGalleryGrilla{
-    justify-items: center;
-    align-items: center;
-    height: 1038px;
-    width: 1920px;
-
+.comissGalleryGrilla {
+  justify-items: center;
+  align-items: center;
+  height: 1038px;
+  width: 1920px;
 }
 
-.cardSomission{
-    justify-content: center;
-    align-items: center;
-    padding: 0px 120px;
-    gap: 20px;
+.cardSomission {
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 20px;
 
-    width: 400px;
-    height: 382px;
-    background: #45C1F0;
-    border-radius: 10px;
+  width: 400px;
+  height: 382px;
+  background: #45c1f0;
+  border-radius: 10px;
 }
 
-.comissFooter{
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 50px 120px;
-gap: 86px;
+.comissFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 120px;
+  gap: 86px;
 
-position: absolute;
-width: 1921.29px;
-height: 636px;
-left: -4px;
-top: 4414px;
+  position: absolute;
+  width: 1921.29px;
+  height: 636px;
+  left: -4px;
+  top: 4414px;
 
-/* Amarillo - Sections */
+  /* Amarillo - Sections */
 
-background: #FFDD80;
+  background: #ffdd80;
 }
 
-.footerContact{
-    width: 263px;
-height: 68px;
+.footerContact {
+  position: absolute;
+  width: 263px;
+  height: 68px;
+  top: 176.5px;
+  left: 120px;
+  right: 1538.29px;
+  bottom: 391.5px;
 
-/* Textos Grandes */
+  /* Textos Grandes */
 
-font-family: 'Bauhaus 93';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 70px;
+  font-family: "Bauhaus 93";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
 
-color: #272343;
+  color: #272343;
 }
 
-.footerContacText{
-    width: 547px;
-height: 97px;
+.footerContacText {
+  position: absolute;
+  width: 547px;
+  height: 97px;
+  top: 278.5px;
+  left: 120px;
+  right: 1254.29px;
+  bottom: 260.5px;
 
-/* Texto - H1 - Navbar */
+  /* Texto - H1 - Navbar */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 48px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
 
-color: #000000;
+  color: #000000;
 }
 
-.iconEmail{
-    width: 41.67px;
-    height: 33.33px;
-    
+.iconEmail {
+  position: absolute;
+  width: 41.67px;
+  height: 33.33px;
+  top: 417.83px;
+  left: 124.17px;
+  right: 1755.46px;
+  bottom: 184.83px;
+
+  background-color: #000000;
 }
 
+.footerContacTextEmail {
+  position: absolute;
+  width: 547px;
+  height: 97px;
+  top: 414px;
+  left: 196px;
+  right: 1219.29px;
+  bottom: 181px;
 
-.comissFooterBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 120px;
-    gap: 119px;
-    
-    position: absolute;
-    width: 1920px;
-    height: 108px;
-    left: 0px;
-    top: 5050px;
-    
-    /* Azul - Textos */
-    
-    background: #272343;  
+  /* Texto - H1 - Navbar */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #000000;
 }
+
+.gifAnimated {
+  position: absolute;
+  width: 232.29px;
+  height: 302px;
+  top: 167px;
+  left: 788px;
+  right: 901px;
+  bottom: 167px;
+
+  background-color: #ffdd80;
+}
+
+.footerContacBoxForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 695px;
+  height: 577px;
+  top: 29.5px;
+  left: 1106.29px;
+  right: 120px;
+  bottom: 29.5px;
+
+  border-radius: 20px;
+}
+
+.footerContacForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25px;
+
+  position: absolute;
+  width: 531px;
+  height: 509px;
+  top: 63.5px;
+  left: 1188.29px;
+  right: 202px;
+  bottom: 63.5px;
+
+  border-radius: 20px;
+}
+
+.footerInputForm {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 530px;
+  height: 70px;
+
+  background: #f9f9f9;
+  /* Azul - Textos */
+
+  border: 3px solid #272343;
+  border-radius: 10px;
+}
+
+.footerInputFormMessag {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 100px;
+  gap: 10px;
+
+  width: 530px;
+  height: 186px;
+
+  background: #f9f9f9;
+  /* Azul - Textos */
+
+  border: 3px solid #272343;
+  border-radius: 10px;
+}
+
+.btnSend {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 264px;
+  height: 55px;
+
+  /* Azul - Textos */
+  background: #272343;
+  /* Azul - Textos */
+
+  border: 3px solid #272343;
+  border-radius: 20px;
+}
+
+.btnSend:hover{
+  background-color: #151325;
+}
+
+.btnSendTxt {
+  width: 76px;
+  height: 45px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Blanco */
+
+  color: #ffffff;
+}
+
+.comissFooterBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 119px;
+
+  position: absolute;
+  width: 1920px;
+  height: 108px;
+  left: 0px;
+  top: 5050px;
+
+  /* Azul - Textos */
+
+  background: #272343;
+}
+
+.footerBarCopyR {
+  position: absolute;
+  width: 536px;
+  height: 36px;
+  left: 120px;
+  right: 1264px;
+  top: 36px;
+  bottom: 36px;
+
+  /* Texto - H1 - Navbar */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+
+  /* Blanco */
+
+  color: #ffffff;
+}
+
+.footerIconSocialTwee {
+  position: absolute;
+  width: 47.3px;
+  height: 38.46px;
+  top: 34.72px;
+  left: 1515.95px;
+  right: 356.74px;
+  bottom: 34.82px;
+
+  /* Blanco */
+
+  background: #ffffff;
+}
+
+.footerIconSocialInst {
+  position: absolute;
+  width: 36.77px;
+  height: 37.58px;
+  top: 35.21px;
+  left: 1599.12px;
+  right: 284.12px;
+  bottom: 35.21px;
+
+  /* Blanco */
+
+  background: #ffffff;
+}
+
+.footerIconSocialLin {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 35px;
+  left: 1677px;
+  right: 205px;
+  bottom: 35px;
+
+  /* Blanco */
+
+  background: #ffffff;
+}
+
+.footerIconSocialBe {
+  position: absolute;
+  width: 46px;
+  height: 28.75px;
+  top: 40px;
+  left: 1752px;
+  right: 122px;
+  bottom: 39.25px;
+
+  /* Blanco */
+
+  background: #ffffff;
+}
+

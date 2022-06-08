@@ -33,8 +33,8 @@
     </nav>
     <header>
         <div class="comissionCover">
-            <p class="headTxt1">¡Comissions is open!</p>
-            <p class="headTxt2">Do you like any character or something in particular? Let's do something better for you.</p>
+                <p class="headTxt1">¡Comissions is open!</p>
+                <p class="headTxt2">Do you like any character or something in particular? Let's do something better for you.</p>
         </div>
     </header>
     <section>
@@ -43,7 +43,11 @@
                 <img class="cardImg" src="./img/Bust (6).png" alt="">
                 <div class="cardTxt">
                     <p class="comissTittle">Brust</p>
-                    <p class="comissContent">Character +10 Element +5 Background +10</p>
+                    <ul class="comissContent">
+                        <li>Character +10</li>
+                        <li>Element +5</li>
+                        <li>Background +10</li>
+                    </ul>
                     <p class="comissPrice">$ 20.00 USD</p>
                     <button class="btnQuote">Quote</button>
                 </div>
@@ -51,46 +55,64 @@
             <div class="card">
                 <img class="cardImg" src="./img/Half Body 2.png" alt="">
                 <div class="cardTxt">
-                    <p class="comissTittle">Brust</p>
-                    <p class="comissContent">Character +10 Element +5 Background +10</p>
-                    <p class="comissPrice">$ 20.00 USD</p>
+                    <p class="comissTittle">Half Body</p>
+                    <ul class="comissContent">
+                        <li>Character +17</li>
+                        <li>Element +10</li>
+                        <li>Background +10</li>
+                    </ul>
+                    <p class="comissPrice">$ 35.00 USD</p>
                     <button class="btnQuote">Quote</button>
                 </div>
             </div>
             <div class="card">
                 <img class="cardImg" src="./img/Full boy (2).jpg" alt="">
                 <div class="cardTxt">
-                    <p class="comissTittle">Brust</p>
-                    <p class="comissContent">Character +10 Element +5 Background +10</p>
-                    <p class="comissPrice">$ 20.00 USD</p>
+                    <p class="comissTittle">Full Body</p><ul class="comissContent">
+                        <li>Character +25</li>
+                        <li>Element +15</li>
+                        <li>Background +15</li>
+                    </ul>
+                    <p class="comissPrice">$ 50.00 USD</p>
                     <button class="btnQuote">Quote</button>
                 </div>
             </div>
             <div class="card">
                 <img class="cardImg" src="./img/Bust (6).png" alt="">
                 <div class="cardTxt">
-                    <p class="comissTittle">Brust</p>
-                    <p class="comissContent">Character +10 Element +5 Background +10</p>
-                    <p class="comissPrice">$ 20.00 USD</p>
+                    <p class="comissTittle">Chibi</p>
+                    <ul class="comissContent">
+                        <li>Character +10</li>
+                        <li>Element +5</li>
+                        <li>Background +10</li>
+                    </ul>
+                    <p class="comissPrice">$ 15.00 USD</p>
                     <button class="btnQuote">Quote</button>
                 </div>
             </div>
             <div class="card">
                 <img class="cardImg" src="./img/Half Body 2.png" alt="">
                 <div class="cardTxt">
-                    <p class="comissTittle">Brust</p>
-                    <p class="comissContent">Character +10 Element +5 Background +10</p>
-                    <p class="comissPrice">$ 20.00 USD</p>
+                    <p class="comissTittle">Pets</p>
+                    <ul class="comissContent">
+                        <li>Character +17</li>
+                        <li>Element +10</li>
+                        <li>Background +10</li>
+                    </ul>
+                    <p class="comissPrice">$ 15.00 USD</p>
                     <button class="btnQuote">Quote</button>
                 </div>
             </div>
             <div class="card">
                 <img class="cardImg" src="./img/Full boy (2).jpg" alt="">
                 <div class="cardTxt">
-                    <p class="comissTittle">Brust</p>
-                    <p class="comissContent">Character +10 Element +5 Background +10</p>
-                    <p class="comissPrice">$ 20.00 USD</p>
-                    <button class="btnQuote">Quote</button>
+                    <p class="comissTittle">Background</p><ul class="comissContent">
+                        <li>Custom characters</li>
+                        <li>Custom Elements</li>
+                        <li>Custom Scenery</li>
+                    </ul>
+                    <p class="comissPrice">$ 40.00 USD</p>
+                    <button class="btnQuote hover:bg-{rgb(21, 19, 37)}">Quote</button>
                 </div>
             </div>
         </div>
@@ -139,9 +161,9 @@
         <div class="comissGallery">
             <div class="comissGalleryCont">
                 <p class="comissTittle ">Commission gallery</p>
-                <p class="comissContent ">Check my latest projects</p>
+                <p class="comissContentTextGallery ">Check my latest projects</p>
             </div>
-            <div class="comissGalleryGrilla grid grid-cols-4 grid-rows-2 gap-7">
+            <div class="comissGalleryGrilla grid grid-cols-4 grid-rows-2 gap-7">                
                 <div class="cardSomission">
 
                 </div>
@@ -168,21 +190,32 @@
                 </div>
 
             </div>
-
         </div>
     </section>
     <footer>
         <div class="comissFooter">
             <p class="footerContact">Contact</p>
             <p class="footerContacText">Send me a message and I'll get back to you soon :)</p>
-            <img class="iconEmail" src="" alt=""><p class="footerContacText">Celeste.D.012@hotmail.com</p>
+            <img class="iconEmail" src="" alt=""><span class="footerContacTextEmail">Celeste.D.012@hotmail.com</span>
+            <img class="gifAnimated" src="./img/footer-animate.gif" alt="icono donuts animado"></img>
+            <form class="footerContacForm">
+                <input class="footerInputForm" type="text" name="name">
+                <input class="footerInputForm" type="email" name="email">
+                <input class="footerInputFormMessag" type="text" name="message">
+                <button class="btnSend"><p class="btnSendTxt">Send</p></button>
+            </form>
         </div>
         <div class="comissFooterBar">
-
+            <span class="footerBarCopyR">Celeste Davalos © 2022</span>
+            <img class="footerIconSocialTwee" src="./img/Img-Twitter.png" alt="">
+            <img class="footerIconSocialInst" src="./img/Img-Instagram.png" alt="">
+            <img class="footerIconSocialLin" src="./img/Img-LinkedIn.png" alt="">
+            <img class="footerIconSocialBe" src="./img/Img-Behance.png" alt="">
         </div>
     </footer>
-    
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 <script src="comission.js"></script>
 </body>
 </html>
