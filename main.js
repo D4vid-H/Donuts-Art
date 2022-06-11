@@ -415,7 +415,7 @@ function isLinkInViewport(elem) {
     distance.top * 2 <(window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0);
 }
 
-modalFunction();
+
 let rellax = new Rellax(".rellax", {
   center: true,
 });
@@ -431,3 +431,25 @@ window.addEventListener("scroll", (event) => {
     }
   });
 });
+
+
+const smoothScroll = () =>{
+  let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+  for (let item of anchorlinks) {  
+      item.addEventListener('click', (e)=> {
+          let hashval = item.getAttribute('href')
+          
+          let target = document.querySelector(hashval)
+          target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+          })
+          history.pushState(null, null, hashval)
+          e.preventDefault()
+      })
+  }
+}
+
+smoothScroll();
+modalFunction();
