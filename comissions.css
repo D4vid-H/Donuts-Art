@@ -1,0 +1,939 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3fbfb;
+}
+
+.iconoLogo {
+  /* image 3 1 */
+  position: absolute;
+  width: 76px;
+  height: 84px;
+  left: 120px;
+  top: 33.5px;
+
+  background: url(/img1/Icono.png);
+  background-size: contain;
+}
+
+/* Celeste */
+.celeste {
+  position: absolute;
+  width: 212px;
+  height: 65px;
+  left: 193px;
+  top: 43px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  /* or 100% */
+
+  padding-left: 20px;
+  justify-items: left;
+
+  color: #272343;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 500px;
+
+  position: absolute;
+  width: 1920px;
+  height: 151px;
+  left: 0px;
+  top: -9px;
+  background-color: #45C1F0;
+}
+
+.btnAbout {
+  /* Frame 14 */
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+
+  position: absolute;
+
+  left: 616.5px;
+  top: 53px;
+  bottom: 63px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  border: none;
+
+  background-color: #45C1F0;
+  color: #000000;
+}
+
+.btnWork {
+  /* Frame 15 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+
+  position: absolute;
+
+  left: 861.5px;
+  top: 53px;
+  bottom: 63px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  border: none;
+
+  background-color: #45C1F0;
+  color: #000000;
+}
+
+.btnContact {
+  /* Frame 16 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+
+  position: absolute;
+
+  left: 1106.5px;
+  top: 53px;
+  bottom: 63px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  border: none;
+
+  background-color: #45C1F0;
+  color: #000000;
+}
+
+.navTweeter {
+  /* Vector */
+  position: absolute;
+  width: 47.3px;
+  height: 38.46px;
+  left: 1515.95px;
+  right: 356.74px;
+  top: 56.22px;
+  bottom: 56.32px;
+}
+
+.navInstagram {
+  /* bxl:instagram-alt */
+  position: absolute;
+  width: 36.77px;
+  height: 37.58px;
+  left: 1599.12px;
+  right: 284.12px;
+  top: 56.71px;
+  bottom: 56.71px;
+}
+
+.navLinkedin {
+  /* Vector */
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 1677px;
+  right: 205px;
+  top: 56.5px;
+  bottom: 56.5px;
+}
+
+.navBehance {
+  /* Vector */
+  position: absolute;
+  width: 46px;
+  height: 28.75px;
+  left: 1752px;
+  right: 122px;
+  top: 61.5px;
+  bottom: 60.75px;
+}
+
+.comissionCover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 33px;
+
+  position: absolute;
+  width: 1920px;
+  height: 330px;
+  left: 0px;
+  top: 142px;
+
+  /* background: pink; */
+  background: center fixed no-repeat url("https://tinyurl.com/jp56xcg");
+}
+
+.headTxt1 {
+  position: absolute;
+  width: 830px;
+  height: 64px;
+  left: 545px;
+  right: 545px;
+  top: 72px;
+  bottom: 194px;
+
+  font-family: "Bauhaus 93";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 93px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.headTxt2 {
+  position: absolute;
+  width: 830px;
+  height: 89px;
+  left: 545px;
+  right: 545px;
+  top: 169px;
+  bottom: 72px;
+
+  /* Buttons - Inactive */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.containerGrilla {
+  /* Auto layout */
+  display: grid;
+  grid-template-columns: repeat(3, 547px);
+  grid-template-rows: repeat(2, 928px);
+  
+  gap: 20px;
+  padding: 82.5px 120px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 20px; */
+
+  position: absolute;
+  width: 1920px;
+  height: 2041px;
+  left: 0px;
+  top: 472px;
+
+  /* Blanco */
+
+  background: #ffffff;
+}
+
+.card {
+  /* Molecule */
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 0px 0px 63px;
+  gap: 30px;
+
+  width: 547px;
+  height: 928px;
+
+  background: #ffffff;
+  border: 1px solid #c0c3c5;
+  border-radius: 20px;
+}
+
+.cardImg {
+  width: 547px;
+  height: 418px;
+  border-radius: 0px;
+  object-fit: fill;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.cardTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 20px;
+
+  /* Blanco */
+  background: #ffffff;
+}
+
+.comissTittle {
+  /* Textos Grandes */
+  font-family: "Bauhaus 93";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+
+  /* Azul - Textos */
+  color: #272343;
+}
+
+.comissContentTextGallery {
+  /* Texto - H1 - Navbar */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.comissContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 452px;
+  height: 143px;
+  /* Texto - H1 - Navbar */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.comissPrice {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+
+  /* Azul - Textos */
+
+  color: #272343;
+}
+
+.btnQuote {
+  /* Atom / BUTTONS */
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 416px;
+  height: 68px;
+
+  /* Azul - Textos */
+  background: #272343;
+  color: #ffffff;
+
+  /* Azul - Textos */
+  border: 3px solid #272343;
+  border-radius: 50px;
+}
+
+.btnQuote:hover {
+  background-color: #151325;
+}
+
+.noteComission {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 24px;
+
+  position: absolute;
+  width: 1920px;
+  height: 699px;
+  left: 0px;
+  top: 2513px;
+
+  /* Celeste Light - Sections */
+
+  background: #f3fbfb;
+}
+
+.vectorDraw {
+  position: absolute;
+  width: 119.71px;
+  height: 115.34px;
+  top: 64.1px;
+  left: 307.47px;
+  right: 1449.47px;
+  bottom: 470.1px;
+
+  background: #ff8bd2;
+  transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
+}
+
+.vectorWork {
+  position: absolute;
+  width: 119.71px;
+  height: 115.34px;
+  top: 59.1px;
+  left: 869.47px;
+  right: 887.47px;
+  bottom: 475.1px;
+
+  background: #ff8bd2;
+  transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
+}
+
+.vectorPayment {
+  position: absolute;
+  width: 119.71px;
+  height: 115.34px;
+  top: 63.6px;
+  left: 1449.47px;
+  right: 307.6px;
+  bottom: 470.6px;
+
+  background: #ff8bd2;
+  transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
+}
+
+.comissContenText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  list-style: initial;
+  
+
+  color: #000000;
+}
+
+li{
+  list-style: none;
+}
+
+.comissContenTextDraw {
+  position: absolute;
+  width: 499px;
+  height: 292px;
+  top: 342.9px;
+  left: 139.5px;
+  right: 1281.5px;
+  bottom: 64.1px;
+}
+
+.comissContenTextWork {
+  position: absolute;
+  width: 499px;
+  height: 302px;
+  top: 337.9px;
+  left: 701.5px;
+  right: 719.5px;
+  bottom: 59.1px;
+}
+
+.comissContenTextPayment {
+  position: absolute;
+  width: 499px;
+  height: 293px;
+  top: 342.4px;
+  left: 1281.5px;
+  right: 139.5px;
+  bottom: 63.6px;
+}
+
+.comissTittleDraw {
+  position: absolute;
+  width: 263px;
+  height: 66px;
+  top: 252.9px;
+  left: 257.5px;
+  right: 1399.5px;
+  bottom: 380.1px;
+}
+
+.comissTittleWork {
+  position: absolute;
+  width: 263px;
+  height: 66px;
+  top: 247.9px;
+  left: 819.5px;
+  right: 837.5px;
+  bottom: 385.1px;
+}
+
+.comissTittlePayment {
+  position: absolute;
+  width: 383px;
+  height: 66px;
+  top: 252.4px;
+  left: 1339.5px;
+  right: 197.5px;
+  bottom: 380.6px;
+}
+
+.comissGallery {
+  position: absolute;
+  width: 1926px;
+  height: 1173px;
+  top: 3212px;
+  left: 0px;
+}
+
+.comissGalleryCont {
+  position: relative;
+  width: 1920px;
+  height: 167px;
+}
+
+.comissGalleryTittle {
+  position: absolute;
+  width: 537px;
+  height: 68px;
+  left: 688.5px;
+  right: 694.5px;
+}
+
+.comissGallerySub {
+  position: absolute;
+  width: 727px;
+  height: 32px;
+  top: 3347px;
+  left: 593.5px;
+  right: 599.5px;
+}
+
+.comissGalleryGrilla {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(2, 382px);
+  gap: 20px;
+  row-gap: 79px;
+  padding: 50px 120px;
+  justify-items: center;
+  align-items: center;
+  height: 1038px;
+  width: 1920px;
+}
+
+.cardSomission {
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 20px;  
+  width: 400px;
+  height: 382px;
+  background: #45c1f0;
+  border-radius: 10px;
+}
+
+.textcomission{
+  /* Textos <p><a> */
+width: 400px;
+height: 39px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+
+color: #000000;
+}
+
+.comissFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 120px;
+  gap: 86px;
+
+  position: absolute;
+  width: 1921.29px;
+  height: 636px;
+  left: -4px;
+  top: 4414px;
+
+  /* Amarillo - Sections */
+
+  background: #ffdd80;
+}
+
+.footerContact {
+  position: absolute;
+  width: 263px;
+  height: 68px;
+  top: 176.5px;
+  left: 120px;
+  right: 1538.29px;
+  bottom: 391.5px;
+
+  /* Textos Grandes */
+
+  font-family: "Bauhaus 93";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+
+  color: #272343;
+}
+
+.footerContacText {
+  position: absolute;
+  width: 547px;
+  height: 97px;
+  top: 278.5px;
+  left: 120px;
+  right: 1254.29px;
+  bottom: 260.5px;
+
+  /* Texto - H1 - Navbar */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #000000;
+}
+
+.iconEmail {
+  position: absolute;
+  width: 41.67px;
+  height: 33.33px;
+  top: 417.83px;
+  left: 124.17px;
+  right: 1755.46px;
+  bottom: 184.83px;
+
+  background-color: #000000;
+}
+
+.footerContacTextEmail {
+  position: absolute;
+  width: 547px;
+  height: 97px;
+  top: 414px;
+  left: 196px;
+  right: 1219.29px;
+  bottom: 181px;
+
+  /* Texto - H1 - Navbar */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #000000;
+}
+
+.gifAnimated {
+  position: absolute;
+  width: 232.29px;
+  height: 302px;
+  top: 167px;
+  left: 788px;
+  right: 901px;
+  bottom: 167px;
+
+  background-color: #ffdd80;
+}
+
+.footerContacBoxForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 695px;
+  height: 577px;
+  top: 29.5px;
+  left: 1106.29px;
+  right: 120px;
+  bottom: 29.5px;
+
+  border-radius: 20px;
+}
+
+.footerContacForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25px;
+
+  position: absolute;
+  width: 531px;
+  height: 509px;
+  top: 63.5px;
+  left: 1188.29px;
+  right: 202px;
+  bottom: 63.5px;
+
+  border-radius: 20px;
+}
+
+.footerInputForm {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 530px;
+  height: 70px;
+
+  background: #f9f9f9;
+  /* Azul - Textos */
+
+  border: 3px solid #272343;
+  border-radius: 10px;
+}
+
+.footerInputFormMessag {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 100px;
+  gap: 10px;
+
+  width: 530px;
+  height: 186px;
+
+  background: #f9f9f9;
+  /* Azul - Textos */
+
+  border: 3px solid #272343;
+  border-radius: 10px;
+}
+
+.btnSend {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 264px;
+  height: 55px;
+
+  /* Azul - Textos */
+  background: #272343;
+  /* Azul - Textos */
+
+  border: 3px solid #272343;
+  border-radius: 20px;
+}
+
+.btnSend:hover {
+  background-color: #151325;
+}
+
+.btnSendTxt {
+  width: 76px;
+  height: 45px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Blanco */
+
+  color: #ffffff;
+}
+
+.comissFooterBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 120px;
+  gap: 119px;
+
+  position: absolute;
+  width: 1920px;
+  height: 108px;
+  left: 0px;
+  top: 5050px;
+  z-index: -1;
+
+  /* Azul - Textos */
+
+  background: #272343;
+}
+
+.footerBarCopyR {
+  position: absolute;
+  width: 536px;
+  height: 36px;
+  left: 120px;
+  right: 1264px;
+  top: 36px;
+  bottom: 36px;
+
+  /* Texto - H1 - Navbar */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+
+  /* Blanco */
+
+  color: #ffffff;
+}
+
+.footerIconSocialTwee {
+  position: absolute;
+  width: 47.3px;
+  height: 38.46px;
+  top: 34.72px;
+  left: 1515.95px;
+  right: 356.74px;
+  bottom: 34.82px;
+
+}
+
+.footerIconSocialInst {
+  position: absolute;
+  width: 36.77px;
+  height: 37.58px;
+  top: 35.21px;
+  left: 1599.12px;
+  right: 284.12px;
+  bottom: 35.21px;
+
+}
+
+.footerIconSocialLin {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 35px;
+  left: 1677px;
+  right: 205px;
+  bottom: 35px;
+
+}
+
+.footerIconSocialBe {
+  position: absolute;
+  width: 46px;
+  height: 28.75px;
+  top: 40px;
+  left: 1752px;
+  right: 122px;
+  bottom: 39.25px;
+
+}
+
+.modal{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #000000bd;
+}
+
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+}
+
+.modal__container{
+margin: auto;
+width: 90%;
+max-width: 600px;
+max-height: 90%;
+border-radius: 6px;
+padding: 3em;
+background-color: #ffffff;
+}
