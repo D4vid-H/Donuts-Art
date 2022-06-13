@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -53,7 +53,7 @@ body {
   height: 151px;
   left: 0px;
   top: -9px;
-  background-color: #45C1F0;
+  background-color: #45c1f0;
 }
 
 .btnAbout {
@@ -81,7 +81,7 @@ body {
   text-align: center;
   border: none;
 
-  background-color: #45C1F0;
+  background-color: #45c1f0;
   color: #000000;
 }
 
@@ -109,7 +109,7 @@ body {
   text-align: center;
   border: none;
 
-  background-color: #45C1F0;
+  background-color: #45c1f0;
   color: #000000;
 }
 
@@ -137,7 +137,7 @@ body {
   text-align: center;
   border: none;
 
-  background-color: #45C1F0;
+  background-color: #45c1f0;
   color: #000000;
 }
 
@@ -248,7 +248,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 547px);
   grid-template-rows: repeat(2, 928px);
-  
+
   gap: 20px;
   padding: 82.5px 120px;
   /* display: flex;
@@ -379,6 +379,15 @@ body {
   width: 416px;
   height: 68px;
 
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+
+  text-align: center;
+
   /* Azul - Textos */
   background: #272343;
   color: #ffffff;
@@ -458,12 +467,11 @@ body {
   font-size: 24px;
   line-height: 36px;
   list-style: initial;
-  
 
   color: #000000;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -575,26 +583,26 @@ li{
   justify-content: center;
   align-items: center;
   padding: 0px 120px;
-  gap: 20px;  
+  gap: 20px;
   width: 400px;
   height: 382px;
   background: #45c1f0;
   border-radius: 10px;
 }
 
-.textcomission{
+.textcomission {
   /* Textos <p><a> */
-width: 400px;
-height: 39px;
+  width: 400px;
+  height: 39px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
 
-color: #000000;
+  color: #000000;
 }
 
 .comissFooter {
@@ -874,7 +882,6 @@ color: #000000;
   left: 1515.95px;
   right: 356.74px;
   bottom: 34.82px;
-
 }
 
 .footerIconSocialInst {
@@ -885,7 +892,6 @@ color: #000000;
   left: 1599.12px;
   right: 284.12px;
   bottom: 35.21px;
-
 }
 
 .footerIconSocialLin {
@@ -896,7 +902,6 @@ color: #000000;
   left: 1677px;
   right: 205px;
   bottom: 35px;
-
 }
 
 .footerIconSocialBe {
@@ -907,10 +912,9 @@ color: #000000;
   left: 1752px;
   right: 122px;
   bottom: 39.25px;
-
 }
 
-.modal{
+.modal {
   display: flex;
   position: fixed;
   top: 0;
@@ -922,18 +926,18 @@ color: #000000;
   background-color: #000000bd;
 }
 
-.modal--show{
+.modal--show {
   opacity: 1;
   pointer-events: unset;
-  transition: opacity .6s;
+  transition: opacity 0.6s;
 }
 
-.modal__container{
-margin: auto;
-width: 90%;
-max-width: 600px;
-max-height: 90%;
-border-radius: 6px;
-padding: 3em;
-background-color: #ffffff;
+.modal__container {
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em;
+  background-color: #ffffff;
 }
