@@ -3,11 +3,12 @@
   padding: 0;
 }
 
-@media only screen and (min-width: 1367px){
+/* @media only screen and (min-width: 1367px){
 
   body {
     background-color: #f9fbf3;
-    height: 5000px;
+    max-width: 100%;
+    max-height: 100%;
   }
   
   nav {
@@ -60,7 +61,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1.875em;
   
     padding-left: 20px;
     justify-items: left;
@@ -69,15 +70,7 @@
   }
   
   .btnAbout {
-  /*   box-sizing: border-box;
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    gap: 10px; */
-  
+ 
     position: absolute;
   
     left: 616.5px;
@@ -87,8 +80,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -97,13 +90,6 @@
   }
   
   .btnWork {
-  /*   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    gap: 10px;
-   */
     position: absolute;
   
     left: 861.5px;
@@ -113,8 +99,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -123,12 +109,6 @@
   }
   
   .btnContact {
-  /*   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    gap: 10px; */
   
     position: absolute;
   
@@ -139,8 +119,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -217,8 +197,8 @@
     font-family: "Bauhaus 93";
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 93px;
+    font-size: 4em;
+    line-height: 5.813em;
     text-align: center;
   
     color: #ffffff;
@@ -233,53 +213,40 @@
     top: 169px;
     bottom: 72px;
   
-    /* Buttons - Inactive */
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
     text-align: center;
   
     color: #ffffff;
   }
   
   .containerGrilla {
-    /* Auto layout */
     display: grid;
     grid-template-columns: repeat(3, 547px);
     grid-template-rows: repeat(2, 928px);
   
     gap: 20px;
     padding: 82.5px 120px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 120px;
-    gap: 20px; */
-  
+
     position: absolute;
     width: 1920px;
     height: 2041px;
     left: 0px;
     top: 472px;
-  
-    /* Blanco */
-  
+   
     background: #ffffff;
   }
   
   .card {
-    /* Molecule */
+
     box-sizing: border-box;
   
-    /* Auto layout */
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+
     padding: 0px 0px 63px;
     gap: 30px;
   
@@ -307,12 +274,10 @@
     padding: 0px 120px;
     gap: 20px;
   
-    /* Blanco */
     background: #ffffff;
   }
   
   .comissTittle {
-    /* Textos Grandes */
     font-family: "Bauhaus 93";
     font-style: normal;
     font-weight: 400;
@@ -320,17 +285,15 @@
     line-height: 70px;
     text-align: center;
   
-    /* Azul - Textos */
     color: #272343;
   }
   
   .comissContentTextGallery {
-    /* Texto - H1 - Navbar */
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
     text-align: center;
   
     color: #000000;
@@ -342,12 +305,12 @@
     justify-content: center;
     width: 452px;
     height: 143px;
-    /* Texto - H1 - Navbar */
+
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
     text-align: center;
   
     color: #000000;
@@ -360,17 +323,13 @@
     font-size: 40px;
     line-height: 60px;
     text-align: center;
-  
-    /* Azul - Textos */
-  
+
     color: #272343;
   }
   
   .btnQuote {
-    /* Atom / BUTTONS */
     box-sizing: border-box;
-  
-    /* Auto layout */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,15 +345,12 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
-    /* identical to box height */
   
     text-align: center;
   
-    /* Azul - Textos */
     background: #272343;
     color: #ffffff;
-  
-    /* Azul - Textos */
+
     border: 3px solid #272343;
     border-radius: 50px;
   }
@@ -404,7 +360,6 @@
   }
   
   .noteComission {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -417,8 +372,6 @@
     height: 699px;
     left: 0px;
     top: 2513px;
-  
-    /* Celeste Light - Sections */
   
     background: #f3fbfb;
   }
@@ -466,8 +419,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
     list-style: initial;
   
     color: #000000;
@@ -593,15 +546,14 @@
   }
   
   .textcomission {
-    /* Textos <p><a> */
     width: 400px;
     height: 39px;
   
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
     text-align: center;
   
     color: #000000;
@@ -621,8 +573,6 @@
     left: -4px;
     top: 4414px;
   
-    /* Amarillo - Sections */
-  
     background: #ffdd80;
   }
   
@@ -634,8 +584,6 @@
     left: 120px;
     right: 1538.29px;
     bottom: 391.5px;
-  
-    /* Textos Grandes */
   
     font-family: "Bauhaus 93";
     font-style: normal;
@@ -654,14 +602,12 @@
     left: 120px;
     right: 1254.29px;
     bottom: 260.5px;
-  
-    /* Texto - H1 - Navbar */
-  
+ 
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
   
     color: #000000;
   }
@@ -687,13 +633,11 @@
     right: 1219.29px;
     bottom: 181px;
   
-    /* Texto - H1 - Navbar */
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 3em;
   
     color: #000000;
   }
@@ -762,7 +706,6 @@
     height: 70px;
   
     background: #f9f9f9;
-    /* Azul - Textos */
   
     border: 3px solid #272343;
     border-radius: 10px;
@@ -770,8 +713,6 @@
   
   .footerInputFormMessag {
     box-sizing: border-box;
-  
-    /* Auto layout */
   
     display: flex;
     flex-direction: row;
@@ -784,16 +725,14 @@
     height: 186px;
   
     background: #f9f9f9;
-    /* Azul - Textos */
-  
+
     border: 3px solid #272343;
     border-radius: 10px;
   }
   
   .btnSend {
     box-sizing: border-box;
-  
-    /* Auto layout */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -803,11 +742,9 @@
   
     width: 264px;
     height: 55px;
-  
-    /* Azul - Textos */
+
     background: #272343;
-    /* Azul - Textos */
-  
+
     border: 3px solid #272343;
     border-radius: 20px;
   }
@@ -825,11 +762,8 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
-    /* identical to box height */
   
     text-align: center;
-  
-    /* Blanco */
   
     color: #ffffff;
   }
@@ -849,8 +783,6 @@
     top: 5050px;
     z-index: -1;
   
-    /* Azul - Textos */
-  
     background: #272343;
   }
   
@@ -863,16 +795,12 @@
     top: 36px;
     bottom: 36px;
   
-    /* Texto - H1 - Navbar */
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
-  
-    /* Blanco */
-  
+    font-size: 2em;
+    line-height: 3em;
+
     color: #ffffff;
   }
   
@@ -944,13 +872,14 @@
     background-color: #ffffff;
   }
 
-}
+} */
 
 
-@media only screen and (min-width: 835px) and (max-width: 1366px) {
+/* @media only screen and (min-width: 835px) and (max-width: 1366px) { */
   body {
     background-color: #f3fbfb;
-    height: 3406px;
+    width: 100%;
+    height: 3500px;
   }
 
   nav {
@@ -967,59 +896,87 @@
   .navBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 500px;
 
     position: absolute;
-    width: 1366px;
+    width: 100%;
     height: 88px;
-    left: 0px;
     top: 0px;
+    left: 0px;
 
     background: #45c1f0;
   }
 
+  .contentBranch{
+    display: flex;
+    width: 16.6875rem;
+    height: 5rem;
+
+    /* background: url(/img/Container.png);
+    background-size: contain; */
+  }
+  .contentLinks{
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 22.625rem;
+    height: 1.875rem;
+  }
+  .contentSocial{
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    width: 16.375rem;
+    height: 2.1875rem;
+  }
+
+  .contentSocial a{
+    margin: auto;
+  }
+
   .iconoLogo {
-    position: absolute;
-    width: 56px;
-    height: 62px;
-    left: 126.5px;
+/*     position: static; */
+    width: 3.5rem;
+    height: 3.875rem;
+    margin: auto;
+/*     left: 126.5px;
     top: 13px;
     right: 1183.5px;
-    bottom: 13px;
+    bottom: 13px; */
 
     background: url(/img/Icono.png);
     background-size: contain;
   }
 
   .celeste {
-    width: 150px;
-    height: 47px;
-
-    position: absolute;
+    width: 9.375rem;
+    height: 2.9375rem;
+    margin: auto;
+/*     position: static;
     left: 168.5px;
     top: 20.5px;
     right: 985.5px;
-    bottom: 20.5px;
+    bottom: 20.5px; */
 
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25em;
+    line-height: 1.25em;
 
-    padding-left: 20px;
+    /* padding-left: 20px; */
     justify-items: left;
 
     color: #272343;
   }
 
   .btnContact {
+    display: flex;
     width: 82px;
     height: 30px;
 
-    position: absolute;
+    position: static;
     left: 503px;
     top: 29px;
     right: 781px;
@@ -1028,8 +985,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25em;
+    line-height: 1.875em;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -1038,10 +995,11 @@
   }
 
   .btnWork {
+    display: flex;
     width: 85px;
     height: 30px;
 
-    position: absolute;
+    position: static;
     left: 635px;
     top: 29px;
     right: 650px;
@@ -1050,8 +1008,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25em;
+    line-height: 1.875em;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -1060,16 +1018,11 @@
   }
 
   .btnAbout {
-    /*     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    gap: 10px; */
+    display: flex;
     width: 99px;
     height: 30px;
 
-    position: absolute;
+    position: static;
     left: 766px;
     top: 29px;
     right: 501px;
@@ -1078,8 +1031,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25em;
+    line-height: 1.875em;
     text-align: center;
     text-decoration: none;
     border: none;
@@ -1088,43 +1041,43 @@
   }
 
   .navTweeter {
-    position: absolute;
-    width: 33.11px;
-    height: 26.92px;
-    left: 1001.72px;
+    position: static;
+    width: 2.069375rem;
+    height: 1.6825rem;
+/*     left: 1001.72px;
     top: 30.51px;
     right: 30.57px;
-    bottom: 331.17px;
+    bottom: 331.17px; */
   }
 
   .navInstagram {
-    position: absolute;
-    width: 25.74px;
-    height: 26.31px;
-    left: 1068.63px;
+    position: static;
+    width: 1.60875rem;
+    height: 1.644375rem;
+/*     left: 1068.63px;
     top: 30.85px;
     right: 271.63px;
-    bottom: 30.85px;
+    bottom: 30.85px; */
   }
 
   .navLinkedin {
-    position: absolute;
-    width: 26.6px;
-    height: 26.6px;
-    left: 1131.85px;
+    position: static;
+    width: 1.6625rem;
+    height: 1.6625rem;
+/*     left: 1131.85px;
     top: 30.7px;
     right: 207.55px;
-    bottom: 30.7px;
+    bottom: 30.7px; */
   }
 
   .navBehance {
-    position: absolute;
-    width: 32.2px;
-    height: 20.12px;
-    left: 1193.05px;
+    position: static;
+    width: 1.60875rem;
+    height: 1.644375rem;
+/*     left: 1193.05px;
     top: 37.18px;
     right: 140.75px;
-    bottom: 30.7px;
+    bottom: 30.7px; */
   }
 
   .comissionCover {
@@ -1135,7 +1088,7 @@
     padding: 0px;
 
     position: absolute;
-    width: 1366px;
+    width: 100%;
     height: 232px;
     left: 0px;
     top: 88px;
@@ -1144,56 +1097,62 @@
   }
 
   .headTxt1 {
-    position: absolute;
-    width: 830px;
-    height: 64px;
+    display: flex;
+    justify-content: center;
+    width: 51.875rem;
+    height: 4rem;
+
+    /* position: static;
     left: 545px;
     top: 72px;
     right: 545px;
-    bottom: 194px;
+    bottom: 194px; */
 
     font-family: "Bauhaus 93";
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 93px;
+    font-size: 4em;
+    line-height: 1em;
     text-align: center;
 
-    color: #ffffff;
+    color: #000;
   }
 
   .headTxt2 {
-    position: absolute;
-    width: 830px;
-    height: 89px;
+    display: flex;
+    justify-content: center;
+    width: 51.875rem;
+    height: 5.5625rem;
+
+    /* position: static;
     left: 545px;
     top: 169px;
     right: 545px;
-    bottom: 72px;
+    bottom: 72px; */
 
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 1em;
     text-align: center;
 
     color: #ffffff;
   }
 
-  .seccionUno{
+  /* .seccionUno{
     position: absolute;
     width: 1366px;
     height: 639px;
     top: 320px;
     left: 0px;
-  }
+  } */
 
   .containerGrilla {
     display: grid;
-    grid-template-columns: repeat(4, 267px);
-    grid-template-rows: 544px;
-    gap: 20px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 34rem;
+    column-gap: 1.25rem;
 
     position: absolute;
     left: 119px;
@@ -1219,8 +1178,8 @@
     padding: 0px 0px 25px;
     gap: 12px;
 
-    width: 267px;
-    height: 544px;
+    width: 100%;
+    height: 34rem;
 
     background: #ffffff;
     border: 1px solid #c0c3c5;
@@ -1228,9 +1187,9 @@
   }
 
   .cardImg {
-    width: 267px;
-    height: 273px;
-    border-radius: 0px;
+    width: 100%;
+    height: 16.6875rem;
+/*     border-radius: 0px; */
     object-fit: fill;
     border-radius: 20px 20px 0px 0px;
   }
@@ -1238,8 +1197,9 @@
   .cardTxt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    height: 255px;
   /*   padding: 0px 120px;
     gap: 20px; */
 
@@ -1252,8 +1212,8 @@
     font-family: "Bauhaus 93";
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 53px;
+    font-size: 2.25em;
+    line-height: 1em;
     text-align: center;
 
     /* Azul - Textos */
@@ -1265,8 +1225,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.5em;
+    line-height: 2.25em;
     text-align: center;
 
     color: #000000;
@@ -1282,19 +1242,23 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
     text-align: center;
 
     color: #000000;
+  }
+
+  .comissContent li {
+    list-style: none;
   }
 
   .comissPrice {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
     text-align: center;
 
     /* Azul - Textos */
@@ -1331,8 +1295,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
     color: #ffffff;
   }
 
@@ -1342,110 +1306,102 @@
 
   .noteComission {
     /* Auto layout */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
     flex-direction: row;
     justify-content: center;
     align-items: center;
     /* padding: 0px 120px; */
-    gap: 20px;
+    /* gap: 20px; */
 
     position: absolute;
-    width: 1366px;
-    height: 680px;
+    width: 90%;
+    height: 42.5rem;
+    left: 119px;
     top: 959px;
+    right: 119px;
     bottom: 1767px;
 
-    /* Celeste Light - Sections */
 
+    /* Celeste Light - Sections */
     background: #f3fbfb;
   }
 
-  .vectorDraw {
-    position: absolute;
-    width: 119.71px;
-    height: 115.34px;
-    left: 219.47px;
-    top: 58.6px;
-    right: 983.47px;
-    bottom: 456.6px;
+  .noteComission div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 362px; */
+    height: 35.9375rem;
+  }
 
-    background: #ff8bd2;
+  .vector {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 7.481875rem;
+    height: 7.20875rem;
     transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
   }
 
-  .vectorWork {
-    position: absolute;
-    width: 119.71px;
-    height: 115.34px;
-    left: 592.47px;
-    top: 53.6px;
-    right: 610.47px;
-    bottom: 461.6px;
-
-    background: #ff8bd2;
+/*   .vectorWork {
+    display: flex;
+    width: 7.481875rem;
+    height: 7.20875rem;
     transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
   }
 
   .vectorPayment {
-    position: absolute;
-    width: 119.71px;
-    height: 115.34px;
-    left: 983.47px;
-    top: 58.1px;
-    right: 219.47px;
-    bottom: 457.1px;
-
-    background: #ff8bd2;
+    display: flex;
+    width: 7.481875rem;
+    height: 7.20875rem;
     transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
   }
-
+ */
   .comissContenText {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 1.525em;
     list-style: initial;
-
     color: #000000;
+    width: 362px;
+    height: 292px;
   }
 
-  li {
-    list-style: none;
-  }
-
-  .comissContenTextDraw {
-    position: absolute;
+  /* .comissContenTextDraw {
+    position: static;
     width: 362px;
     height: 292px;
     left: 120px;
     top: 329.4px;
     right: 884px;
     bottom: 58.6px;
-  }
+  } */
 
-  .comissContenTextWork {
-    position: absolute;
+  /* .comissContenTextWork {
+    position: static;
     width: 344px;
     height: 302px;
     left: 502px;
     top: 324.4px;
     right: 520px;
     bottom: 53.6px;
-  }
+  } */
 
-  .comissContenTextPayment {
-    position: absolute;
+  /* .comissContenTextPayment {
+    position: static;
     width: 362px;
     height: 293px;
     left: 884px;
     top: 328.9px;
     right: 120px;
     bottom: 58.1px;
-  }
+  } */
 
   .comissTittleDraw {
-    position: absolute;
+    position: static;
     width: 263px;
     height: 66px;
     left: 169.5px;
@@ -1455,7 +1411,7 @@
   }
 
   .comissTittleWork {
-    position: absolute;
+    position: static;
     width: 263px;
     height: 66px;
     left: 542.5px;
@@ -1465,7 +1421,7 @@
   }
 
   .comissTittlePayment {
-    position: absolute;
+    position: static;
     width: 383px;
     height: 66px;
     left: 873.5px;
@@ -1474,22 +1430,26 @@
     bottom: 371.1px;
   }
 
+/*-----------------------------------------------------------------------------------------------------*/
+
   .comissGallery {
     position: absolute;
-    width: 1366px;
+    width: 100%;
     height: 1221px;
     left: 0px;
     top: 1639px;
+    display: flex;
+    flex-direction: column;
   }
 
   .comissGalleryCont {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 727px;
     height: 128px;
-    left: 319.5px;
-    top: 42.5px;
-    right: 319.5px;
-    bottom: 1050.5px;
+    margin: auto;
   }
 
   .comissGalleryTittle {
@@ -1512,11 +1472,11 @@
 
   .comissGalleryGrilla {
     display: grid;
-    grid-template-columns: repeat(4, 267px);
-    grid-template-rows: repeat(3, 267px);
-    gap: 20px;
-    row-gap: 69px;
-    padding: 20px 119px 42.5px 119px ;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 16.6875rem);
+    gap: 1.25rem;
+    row-gap: 4.3125rem;
+    /* padding: 20px 119px 42.5px 119px ; */
     justify-items: center;
     align-items: center;
     /* height: 1093px;
@@ -1526,7 +1486,7 @@
   .cardComission {
     justify-content: center;
     align-items: center;    
-    width: 267px;
+    width: 100%;
     height: 267px;
     background: #45c1f0;
     border-radius: 10px;
@@ -1546,8 +1506,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25em;
+    line-height: 1.875em;
     text-align: center;
 
     color: #000000;
@@ -1593,8 +1553,8 @@
     font-family: "Bauhaus 93";
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 53px;
+    font-size: 2.25em;
+    line-height: 3.313em;
 
     color: #272343;
   }
@@ -1613,8 +1573,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
 
     color: #000000;
   }
@@ -1645,8 +1605,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
 
     color: #000000;
   }
@@ -1800,8 +1760,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
     /* identical to box height */
 
     text-align: center;
@@ -1843,8 +1803,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5em;
+    line-height: 2.25em;
 
     /* Blanco */
 
@@ -1918,4 +1878,4 @@
     padding: 3em;
     background-color: #ffffff;
   }
-}
+/* } */
