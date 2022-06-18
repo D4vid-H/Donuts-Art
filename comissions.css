@@ -879,7 +879,7 @@
   body {
     background-color: #f3fbfb;
     width: 100%;
-    height: 3500px;
+    height: 3406px;
   }
 
   nav {
@@ -1307,7 +1307,7 @@
   .noteComission {
     /* Auto layout */
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+    grid-template-columns: repeat(3, 32%);
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1317,12 +1317,9 @@
     position: absolute;
     width: 90%;
     height: 42.5rem;
-    left: 119px;
     top: 959px;
-    right: 119px;
-    bottom: 1767px;
-
-
+    left: 119px;
+   
     /* Celeste Light - Sections */
     background: #f3fbfb;
   }
@@ -1434,10 +1431,11 @@
 
   .comissGallery {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 1221px;
     left: 0px;
     top: 1639px;
+    left: 119px;
     display: flex;
     flex-direction: column;
   }
@@ -1476,11 +1474,12 @@
     grid-template-rows: repeat(3, 16.6875rem);
     gap: 1.25rem;
     row-gap: 4.3125rem;
-    /* padding: 20px 119px 42.5px 119px ; */
+
     justify-items: center;
     align-items: center;
-    /* height: 1093px;
-    width: 1366px; */
+ 
+    width: 90%; 
+    margin-bottom: 50px;
   }
 
   .cardComission {
@@ -1512,17 +1511,16 @@
 
     color: #000000;
   }
-
+/*----------------------------------------------------------------------------------------------------------------------------*/
   .comissFooter {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    /* padding: 8.5px 122.5px; */
 
     position: absolute;
-    width: 1366px;
-    height: 461px;
+    width: 100%;
+    height: 28.813rem;
     left: 0px;
     top: 2860px;
 
@@ -1530,17 +1528,13 @@
   }
 
   .contactFooterContent{
-    position: absolute;
-    width: 381px;
+    width: 35%;
     height: 249px;
-    left: 122.5px;
-    top: 106px;
-    right: 865.5px;
-    bottom: 106px;
+ 
   }
 
   .footerContact {
-    position: absolute;
+    position: static;
     width: 263px;
     height: 68px;
     left: 0;
@@ -1554,45 +1548,48 @@
     font-style: normal;
     font-weight: 400;
     font-size: 2.25em;
-    line-height: 3.313em;
+    line-height: 2.250em;
 
     color: #272343;
   }
 
   .footerContacText {
-    position: absolute;
+    position: static;
     width: 366px;
     height: 69px;
-    top: 102px;
-    left: 0px;
-    right: 15px;
-    bottom: 78px;
-
-    /* Texto - H1 - Navbar */
 
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 1.5em;
-    line-height: 2.25em;
+    line-height: 1.25em;
 
     color: #000000;
   }
 
+  .gifAnimated {
+    display: flex;
+    position: static;
+    width: 12%;
+    height: 159px;
+    top: 106px;
+    left: 568.5px;
+    right: 641.5px;
+    bottom: 106px;
+
+    background-color: #ffdd80;
+  }
+
+
   .iconEmail {
-    position: absolute;
+ 
     width: 35px;
     height: 29px;
-    top: 212.5px;
-    left: 4.5px;
-    right: 341px;
-    bottom: 7.5px;
-
-    background-color: #000000;
+    padding-right: 10px;
   }
 
   .footerContacTextEmail {
-    position: absolute;
+    position: static;
     width: 333px;
     height: 41px;
     top: 206.5px;
@@ -1611,27 +1608,16 @@
     color: #000000;
   }
 
-  .gifAnimated {
-    position: absolute;
-    width: 159px;
-    height: 249px;
-    top: 106px;
-    left: 568.5px;
-    right: 641.5px;
-    bottom: 106px;
-
-    background-color: #ffdd80;
-  }
 
   .footerContacForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     padding: 0px;
 
-    position: absolute;
-    width: 454px;
+    position: static;
+    width: 35%;
     height: 456px;
     top: 2.5px;
     left: 792.5px;
@@ -1649,17 +1635,9 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-    position: absolute;
-    width: 454px;
+    width: 100%;
     height: 60px;
-    left: 0px;
-    top: 32.5px;
-    right: 0px;
-    bottom: 351.5px;
-
 
     background: #f9f9f9;
     /* Azul - Textos */
@@ -1676,16 +1654,10 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-    position: absolute;
-    width: 454px;
+    width: 100%;
     height: 60px;
-    left: 0px;
-    top: 112.5px;
-    right: 0px;
-    bottom: 271.5px;
+
 
     background: #f9f9f9;
     /* Azul - Textos */
@@ -1697,26 +1669,17 @@
   .footerInputFormMessag {
     box-sizing: border-box;
 
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-    position: absolute;
-    width: 454px;
+
+    width: 100%;
     height: 150px;
-    left: 0px;
-    top: 192.5px;
-    right: 0px;
-    bottom: 101.5px;
 
     background: #f9f9f9;
-    /* Azul - Textos */
 
     border: 3px solid #272343;
     border-radius: 10px;
@@ -1731,20 +1694,12 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 10px;
 
-    position: absolute;
-    width: 170px;
+
+    width: 35%;
     height: 49px;
-    left: 0px;
-    top: 362.5px;
-    right: 284px;
-    bottom: 32.5px;
 
-    /* Azul - Textos */
     background: #272343;
-    /* Azul - Textos */
-
     border: 3px solid #272343;
     border-radius: 20px;
   }
@@ -1754,6 +1709,9 @@
   }
 
   .btnSendTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 61px;
     height: 36px;
 
@@ -1762,23 +1720,20 @@
     font-weight: 400;
     font-size: 1.5em;
     line-height: 2.25em;
-    /* identical to box height */
-
-    text-align: center;
-
-    /* Blanco */
 
     color: #ffffff;
   }
 
+
+  
   .comissFooterBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     position: absolute;
-    width: 1366px;
+    width: 100%;
     height: 85px;
     left: 0px;
     top: 3321px;
@@ -1790,7 +1745,8 @@
   }
 
   .footerBarCopyR {
-    position: absolute;
+    display: flex;
+    position: static;
     width: 536px;
     height: 36px;
     left: 120px;
@@ -1811,44 +1767,43 @@
     color: #ffffff;
   }
 
+  .footerBarSocial{
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    width: 16.375rem;
+    height: 2.1875rem;
+  }
+
   .footerIconSocialTwee {
-    position: absolute;
-    width: 33.11px;
-    height: 26.92px;
-    top: 29.01px;
-    left: 1001.72px;
-    right: 331.17px;
-    bottom: 29.07px;
+    display: flex;
+    width: 2.069375rem;
+    height: 1.6825rem;
+
   }
 
   .footerIconSocialInst {
-    position: absolute;
-    width: 25.74px;
-    height: 26.31px;
-    top: 29.35px;
-    left: 1068.63px;
-    right: 271.63px;
-    bottom: 29.35px;
+    display: flex;
+
+    width: 1.60875rem;
+    height: 1.644375rem;
+
   }
 
   .footerIconSocialLin {
-    position: absolute;
-    width: 26.6px;
-    height: 26.6px;
-    top: 29.2px;
-    left: 1131.85px;
-    right: 207.55px;
-    bottom: 29.2px;
+    display: flex;
+
+    width: 1.6625rem;
+    height: 1.6625rem;
+
   }
 
   .footerIconSocialBe {
-    position: absolute;
-    width: 32.2px;
-    height: 20.12px;
-    top: 32.7px;
-    left: 1193.05px;
-    right: 140.75px;
-    bottom: 32.18px;
+    display: flex;
+
+    width: 1.60875rem;
+    height: 1.644375rem;
+
   }
 
   .modal {
@@ -1861,6 +1816,7 @@
     opacity: 0;
     pointer-events: none;
     background-color: #000000bd;
+    width: 100%;
   }
 
   .modal--show {
@@ -1871,9 +1827,10 @@
 
   .modal__container {
     margin: auto;
-    width: 90%;
-    max-width: 200px;
-    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 6px;
     padding: 3em;
     background-color: #ffffff;
