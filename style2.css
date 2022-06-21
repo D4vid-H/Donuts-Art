@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+
+#loading img{
+    margin-left: 42vw;
+    margin-top: 30vh;
+    width: 14%;
+    height: 30%;
+}
+
 body {
     background-color: #F3FBFB;
 }
@@ -19,7 +34,7 @@ header {
     display: flex;
     flex-direction: row;
     background-color: #45C1F0;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
     position: sticky;
@@ -31,6 +46,7 @@ header {
     margin-left: 20%;
     display: flex;
     align-items: center;
+
 }
 
 .header__logo--img{
@@ -40,13 +56,15 @@ header {
 .header__logo--text{
     margin-left: 1rem;   
     width: 10rem;
-    font-family: 'Bauhaus 93';
+    font-family: 'poppins';
     font-size: 2.5vh;
     text-justify: center;
+    color: #272343;
+    line-height: 1.4rem;
 }
 
 nav{
-    flex-grow: 1;
+   
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -75,7 +93,9 @@ nav a{
 /*------------------Main---------------------------*/
 
 .main{
-    background-color: #45C1F0;    
+   
+    background-image: url("img/Home\ fondo\ chispas.png");
+   
     height: 90vh;
     width: 100%;
     display: flex;
@@ -85,13 +105,18 @@ nav a{
 
 .container__text{
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     margin-bottom: 7%;
 }
 
 .container__text--center{
-    transform: translatex(-55%);
+    transform: translatex(-75%);
+    background-color: #45C1F0;
+    color: #272343;
+    opacity: 0.95;
+    line-height: 4rem;
 }
 
 .container__text--center h2{
@@ -107,6 +132,7 @@ nav a{
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-size:  1.2rem;
+    line-height: 1.4rem;
 }
 
 .container__text--center button {
@@ -129,7 +155,7 @@ nav a{
 }
 
 .main--img{
-    width: 55vw;   
+    width: 50vw;   
 }
 
 /*------------------About me---------------------------*/
@@ -174,6 +200,9 @@ nav a{
     width: 40vw;
     height: 40vh;
   }
+
+
+
 
   .swiper-slide {
     text-align: center;
@@ -255,7 +284,7 @@ nav a{
 }
 
 .work__header{
-    height: 20vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     background-color:  #F3FBFB;
@@ -289,7 +318,7 @@ nav a{
 }
 
 .work__projects{
-    margin-left: 10%;
+    margin-left: 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -308,8 +337,9 @@ nav a{
 }
 
 .project--item input{
-    width: 12vw;
-    height: 20vh;
+    border-radius: 10px;
+    width: 18vw;
+    height: 18vw;
 }
 
 /*------------------Comissions---------------------------*/
@@ -321,8 +351,22 @@ nav a{
     margin-top: 5vh;
 }
 
+.com__parallax{
+    position: absolute; 
+    overflow: hidden;
+    width: 100%;
+
+    z-index: -1;
+  
+}
+
+.com__parallax img{
+    margin-top: 39%;
+    width: 100%;
+}
+
 .com__open{
-    background-color: #272343;
+    
     color: #F3FBFB;
     height: 40vh;
     display: flex;
@@ -355,6 +399,10 @@ nav a{
     margin-left: 2rem;
     margin-top: 2rem;
     padding: .5rem;
+}
+
+.com__open button a{
+    color: white;
 }
 
 .com__form {
@@ -507,9 +555,9 @@ footer h3 {
   .modal-content {
     background-color: #fefefe;
     margin: 12% auto; /* 15% from the top and centered */
-   
+    
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
@@ -535,10 +583,11 @@ footer h3 {
 
   /*------------ Modal Styles---------- */
 
-  .project--item__modal{
+  .project--item__modal{ 
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2%;
   }
 
     .mySwiperModal{
@@ -547,11 +596,13 @@ footer h3 {
     }
 
    #img__Carr{
-       height: 40vh;
+       height: 100%;
        width: 100%;
    } 
 
-
+   .swiper-slide video {
+    width: 30vw;
+   }
 
   .project--item__modal--text{
     display: flex;
@@ -568,7 +619,7 @@ footer h3 {
   }
   .project--item__modal--text p{
     font-family: 'Nunito';
-    font-weight: 100;
+    font-weight: 200;
   }
 
 .project--item__modal--textDesc{
@@ -594,4 +645,28 @@ footer h3 {
   .tools--img img{
     width: 3vw;
     height: 5vh;
+  }
+
+  .swiper-button-next {
+    background-image: url("img/button_right.png") !important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+
+  .swiper-button-prev {
+    background-image: url("img/button_left.png") !important;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
   }

@@ -1,3 +1,22 @@
+const wait = (delay = 0) =>
+  new Promise(resolve => setTimeout(resolve, delay));
+
+const setVisible = (elementOrSelector, visible) => 
+  (typeof elementOrSelector === 'string'
+    ? document.querySelector(elementOrSelector)
+    : elementOrSelector
+  ).style.display = visible ? 'block' : 'none';
+
+setVisible('.page', false);
+setVisible('#loading', true);
+
+document.addEventListener('DOMContentLoaded', () =>
+  wait(1000).then(() => {
+    setVisible('.page', true);
+    setVisible('#loading', false);
+  }));
+
+
 let proyectos = [
   // UX/UI
   {
@@ -7,7 +26,7 @@ let proyectos = [
     categoria: "Ux/Ui Desing",
     drive: "",
     tools: ["figma-icon", "illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["image21"],
+    img: ["Mesa de trabajo 1","Mesa de trabajo 2","Mesa de trabajo 3","Mesa de trabajo 4"],
     descripcion:
       "It was my first UX/UI project where I designed an App that seeks to connect those art lovers who are looking to learn in a more interactive way. In this project I could reflect my love for the history of art and also allowed me to experience more deeply the educational field in a dynamic way to the user. ",
     behance: "https://www.behance.net/gallery/144457417/App-ArtNow-UXUI",
@@ -128,7 +147,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image12"],
+    img: ["monsterp1","monsterp2","monsterp3","monsterp4","monsterp5","monsterp6","monsterp7","monsterp8","monsterp9","monsterp10","monsterp11","monsterp12","monsterp13","monsterp14","monsterp15"],
     descripcion:
       "I made an adaptation of this famous series, in which I included a new fashion style to the characters, changing their visual design to a more modern one.",
     behance: "",
@@ -140,7 +159,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image16"],
+    img: ["barbie1","barbie2"],
     descripcion:
       "I made this illustration as a tribute to one of my favorite characters from my childhood; the beloved Barbie, capturing one of her many adventures.",
     behance: "",
@@ -152,7 +171,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image26"],
+    img: ["avatar1","avatar2","avatar3"],
     descripcion:
       "In this illustration he captured one of the best scenes of the great Avatar series, where the characters perform the dragon dance. This fan art was made together with Maru Davalos: https://www.instagram.com/maru_davalos_art/",
     behance: "",
@@ -164,7 +183,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image9"],
+    img: ["teen1","teen2"],
     descripcion:
       "I made this illustration of the famous Teen Titans series with my drawing style, involving a new variety of colors and textures.",
     behance: "",
@@ -176,7 +195,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image20"],
+    img: ["Shingek1","Shingek2"],
     descripcion:
       "In this illustration I made from the anime Shingeki no Kyojin, I experimented with dark colors and shades of red.",
     behance: "",
@@ -188,7 +207,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image1"],
+    img: ["jubilo1","jubilo2"],
     descripcion:
       "Make this illustration of X-men's beloved Jubilo using her brilliant powers.",
     behance: "",
@@ -200,7 +219,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image23", "image4"],
+    img: ["Kimetsu1", "Kimetsu2","Kimetsu3"],
     descripcion:
       "Make these illustrations of the characters of the anime Kimetsu no yaiba. Showing Tomioka and Shinobu with a costume proposal from the feudal era of Japan. Using a simpler and cartoon style.",
     behance: "",
@@ -212,7 +231,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image25"],
+    img: ["mob1","mob2"],
     descripcion:
       "I illustrated my favorite Mob Psycho 100 characters, giving them my own visual style of drawing.",
     behance: "",
@@ -224,7 +243,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image7"],
+    img: ["Umbrella1","Umbrella2","Umbrella3"],
     descripcion:
       "Due to the release of the second season of the hit series The Umbrella Academy, make an illustration of your best scene, where you experiment with textures and color combinations.",
     behance: "",
@@ -236,7 +255,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image22"],
+    img: ["realismo1","realismo2"],
     descripcion:
       "Illustration representing the lazy awakening of a morning to start the days and wait for the rest, illustrated in a more realistic way.",
     behance: "",
@@ -248,7 +267,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["image17"],
+    img: ["nut1.mp4","nut2.mp4"],
     descripcion:
       "Animation paying homage to the beautiful classic ballet, Nutcracker, where the falling snowflakes are dancers doing the dance of the winter fairies.",
     behance: "",
@@ -262,6 +281,11 @@ const body = document.getElementById("body");
 const linksColor = document.querySelectorAll(".link__color");
 const sections = document.querySelectorAll("section");
 const botones = document.querySelectorAll(".b_categoria");
+const header = document.getElementById("header");
+let video =[];
+
+
+
 let prevBotonColor = undefined;
 botones.forEach((boton) => {
   boton.addEventListener("click", (e) => {
@@ -282,7 +306,7 @@ const showProjects = (categoria) => {
     proyectos.forEach((proyecto) => {
       projectsDiv.innerHTML += `
                 <div class="project--item">
-                     <input type="image" id="${proyecto.id}" class="b_modal" src="img/proyectos/${proyecto.img[0]}.png"/> 
+                     <input type="image" id="${proyecto.id}" class="b_modal" src="img/proyectos/${proyecto.img[0]}.jpg"/> 
                      ${proyecto.nombre} 
                 </div>
             `;
@@ -296,7 +320,7 @@ const showProjects = (categoria) => {
     proyectosCategorias.forEach((proyecto) => {
       projectsDiv.innerHTML += `
             <div class="project--item">
-                <input type="image" id="${proyecto.id}" class="b_modal" src="img/proyectos/${proyecto.img[0]}.png"/> 
+                <input type="image" id="${proyecto.id}" class="b_modal" src="img/proyectos/${proyecto.img[0]}.jpg"/> 
                 ${proyecto.nombre} 
              </div>
             `;
@@ -313,6 +337,7 @@ const buttonsModals = () => {
       body.style.overflowY = "hidden";
       proyectos.forEach((p) => {
         if (b.target.id === p.id) {
+          
           //Modal del proyecto HTML
           projectModal.innerHTML = `
             <div class="project--item__modal">
@@ -354,14 +379,33 @@ const buttonsModals = () => {
                 `;
           });
           p.img.forEach((i) => {
-            console.log(carrImg);
-            carrImg.innerHTML += `
-              <div class="swiper-slide"><img src="img/proyectos/${i}.png"></div>
+            if (i.includes("mp4")){
+              carrImg.innerHTML += `
+              <div class="swiper-slide"><video class="video" loop muted controls src="img/proyectos/${i}"></div>
               `;
+            } else {
+              carrImg.innerHTML += `
+              <div class="swiper-slide"><img src="img/proyectos/${i}.jpg"></div>
+              `;
+            }
           });
         }
       });
+      video = document.querySelectorAll(".video");  
+      if (video.length !=0){
+        video[0].play();
+      }
       let swiperModal = new Swiper(".mySwiperModal", {
+        on: {
+          slideChange: function () {
+              if (video!=null){
+                video.forEach(v=> {v.pause() 
+                  v.currentTime = 0;
+                })
+                video[swiperModal.activeIndex].play(); 
+              }           
+          },
+        },
         spaceBetween: 30,
         centeredSlides: true,
         navigation: {
@@ -381,6 +425,7 @@ const modalFunction = () => {
   span.onclick = function () {
     modal.style.display = "none";
     body.style.overflowY = "auto";
+    video != null && video.forEach(v=> v.pause())
   };
 
   // When the user clicks anywhere outside of the modal, close it
@@ -388,11 +433,12 @@ const modalFunction = () => {
     if (event.target == modal) {
       modal.style.display = "none";
       body.style.overflowY = "auto";
+      video != null && video.forEach(v=> v.pause())
     }
   };
 };
 
-let swiper = new Swiper(".mySwiper", {
+/*const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -407,7 +453,7 @@ let swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
+});*/
 
 function isLinkInViewport(elem) {
   let distance = elem.getBoundingClientRect();
@@ -420,13 +466,28 @@ let rellax = new Rellax(".rellax", {
   center: true,
 });
 
+function HeaderColor() {
+  if (window.pageYOffset > header.offsetHeight*6.5) {
+    header.style.backgroundColor = "white";
+    header.style.boxShadow ="box-shadow: 0px 5px #00000017";
+  } else {
+    header.style.backgroundColor = "#45C1F0";
+  }
+} 
+
+
+
 botones[0].click();
 
+
+
+
 window.addEventListener("scroll", (event) => {
+  HeaderColor();
   sections.forEach((e) => {
     if (isLinkInViewport(e)) {
       linksColor.forEach((link) => {
-        e.id == link.textContent? (link.style.color = "white"): (link.style.color = "black");
+        e.id == link.textContent? (link.style.color = "#45C1F0"): (link.style.color = "black");
       });
     }
   });
@@ -450,6 +511,11 @@ const smoothScroll = () =>{
       })
   }
 }
+
+
+
+
+
 
 smoothScroll();
 modalFunction();
