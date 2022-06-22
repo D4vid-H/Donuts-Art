@@ -17,7 +17,7 @@ modal.classList.remove('modal--show');
 window.onscroll = () => myFunction();
 
 // Get the header
-let header = document.querySelector(".navBar");
+let header = document.querySelector(".nav");
 
 // Get the offset position of the navbar
 let sticky = header.offsetTop;

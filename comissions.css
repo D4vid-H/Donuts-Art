@@ -879,7 +879,7 @@
   body {
     background-color: #f3fbfb;
     width: 100%;
-    height: 3406px;
+    height: 3303px;
   }
 
   nav {
@@ -1091,7 +1091,7 @@
     width: 100%;
     height: 232px;
     left: 0px;
-    top: 88px;
+    top: 62.5px;
 
     background: center fixed no-repeat url("https://tinyurl.com/jp56xcg");
   }
@@ -1312,10 +1312,10 @@
     justify-content: center;
     align-items: center;
     /* padding: 0px 120px; */
-    /* gap: 20px; */
+    gap: 20px;
 
     position: absolute;
-    width: 90%;
+    width: 85%;
     height: 42.5rem;
     top: 959px;
     left: 119px;
@@ -1363,7 +1363,7 @@
     line-height: 1.525em;
     list-style: initial;
     color: #000000;
-    width: 362px;
+    /* width: 362px; */
     height: 292px;
   }
 
@@ -1431,7 +1431,7 @@
 
   .comissGallery {
     position: absolute;
-    width: 90%;
+    width: 85%;
     height: 1221px;
     left: 0px;
     top: 1639px;
@@ -1492,13 +1492,12 @@
   }
 
   .cardComissionImg{
-    width: 245px;
-    height: 245px;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+   /*  padding: 10px; */
   }
 
-  .textcomission {
-    /* Textos <p><a> */
+  /* .textcomission {
     width: 267px;
     height: 39px;
 
@@ -1510,9 +1509,26 @@
     text-align: center;
 
     color: #000000;
-  }
+  } */
 /*----------------------------------------------------------------------------------------------------------------------------*/
-  .comissFooter {
+  
+.footerComissions{
+  position: absolute;
+  width: 100%;
+  height: 28.813rem;
+  left: 0px;
+  top: 2844px;
+}
+
+.footerComissionsBar{
+  position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    top: 3219px;
+}
+
+.comissFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

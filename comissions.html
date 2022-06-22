@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/Icono.ico" type="image/x-icon" />
     <title>Donuts Art</title>
     <link rel="stylesheet" href="comissions.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
@@ -19,31 +20,41 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="navBar">
-            <div class="contentBranch">
-                <img class="iconoLogo" src="./img/Icono.png" alt="logo">
-                    <p class="celeste ">Celeste Donuts Art</p>
-            </div>
-            <div class="contentLinks">
-                <a href="./index.html#contacto" class="btnContact">Contact</a>
-                <a href="./index.html#work" class="btnWork">My work</a>
-                <a href="./index.html#about" class="btnAbout">About me</a>
-            </div>
-            <div class="contentSocial">
-                <a href="https://twitter.com/CelesteDonutArt"><img class="navTweeter" src="./img/Img-Twitter.png" alt="logoTweeter"></a>
-                <a href="https://www.instagram.com/celeste_donuts_art/"><img class="navInstagram" src="./img/Img-Instagram.png" alt="logoInstagram"></a>
-                <a href="#"><img class="navLinkedin"  src="./img/Img-LinkedIn.png" alt="logo Linkedin"></a>
-                <a href="https://www.behance.net/rociocelestedavalos"><img class="navBehance"  src="./img/Img-Behance.png" alt="logoBehance"></a>
-            </div>
-        </div>          
-    </nav>
-    <header>
+    <header id="header" class="nav">
+        <a href="./index.html">
+            <div class="header__logo">
+            
+                    <img  class="header__logo--img"src="img/Icono.png">
+                    <h1 class="header__logo--text">Celeste <br>Donuts Art</h1>
+            
+            </div>        
+        </a>
+        <nav>
+            <a href="./index.html#about" class="link__color">About me</a>
+            <a href="./index.html#work" class="link__color">My Work</a>
+            <a href="./index.html#contact" class="link__color">Contact</a>
+        </nav>
+        <div class="social">
+            <a href="">
+                <img  src="img/Img-Behance.png">
+            </a> 
+            <a href="">
+                <img  src="img/Img-Instagram.png">
+            </a> 
+            <a href="">
+                <img  src="img/Img-LinkedIn.png">
+            </a> 
+            <a href="">
+                <img src="img/Img-Twitter.png">
+            </a> 
+        </div>
+    </header>
+    <section>
         <div class="comissionCover">
                 <p class="headTxt1">¡Comissions is open!</p>
                 <p class="headTxt2">Do you like any character or something in particular? Let's do something better for you.</p>
         </div>
-    </header>
+    </section>
     <section>
         <div class="containerGrilla">
             <div class="card">
@@ -147,105 +158,122 @@
             </div>
             <div class="comissGalleryGrilla">                
                 <div class="cardComission">
-                    <div >
+                    
                         <a href="" class="openModal">
                             <img class="cardComissionImg" src="./img/Bust (6).png" alt="" srcset="">
                         </a>
-                    </div>
-                    <p class="textcomission">Project Name</p>
+                                   
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission"> 
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
                 <div class="cardComission">
                     <div >
     
                     </div>
-                    <p class="textcomission">Project Name</p>
+                    
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="comissFooter">
-            <div class="contactFooterContent">
-                <p class="footerContact">Contact</p>
-                <p class="footerContacText">Send me a message and I'll get back to you soon :)</p>
-                <span class="footerContacTextEmail"><img class="iconEmail" src="./img/email.png" alt="">Celeste.D.012@hotmail.com</span>
+    <section class="footerComissions">
+        <div class="com__form">
+            <div class="com__form--contact">
+                <h2>Contact</h2>
+                <p>Send me a message and I'll get back to you soon :) </p>
+                <div class="com__form--contact--mail">
+                    <img  src="img/mail.png">
+                    <h3>Celeste.D.012@hotmail.com</h3>
+                </div>             
             </div>
-            <img class="gifAnimated" src="./img/footer-animate.gif" alt="icono donuts animado"></img>
-            <form class="footerContacForm">
-                <input class="footerInputForm1" type="text" name="name">
-                <input class="footerInputForm2" type="email" name="email">
-                <textarea class="footerInputFormMessag" name="message" id="" cols="30" rows="10"></textarea>
-                <button class="btnSend"><p class="btnSendTxt">Send</p></button>
-            </form>
+            <div class="form__img">
+                <img class="img__footer" src="img/footer-donuts.png">
+            </div> 
+            <div>   
+                <form action="mailto:direccion@correo.com">          
+                    <div class="form__items">
+                            <h3>Contact me</h3>
+                            <INPUT type="text" id="nombre" placeholder="Name:"><BR>                 
+                            <INPUT type="text" id="email" placeholder="E-Mail:"><BR>               
+                            <INPUT type="text" id="message" placeholder="Message:" class="input--mes"><BR>
+                    <INPUT type="submit" value="Send" class="form--send"> 
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="comissFooterBar">
-            <span class="footerBarCopyR">Celeste Davalos © 2022</span>
-            <div class="footerBarSocial">
-                <img class="footerIconSocialTwee" src="./img/Img-Twitter-white.png" alt="">
-                <img class="footerIconSocialInst" src="./img/Img-Instagram-white.png" alt="">
-                <img class="footerIconSocialLin" src="./img/Img-LinkedIn-white.png" alt="">
-                <img class="footerIconSocialBe" src="./img/Img-Behance-white.png" alt="">
-            </div>
+    </section>
+    <footer class="footerComissionsBar">
+        <h3>Celeste Davalos © 2022 </h3>
+        <div class="social__footer">
+            <a href="">
+                <img  src="img/Img-Behance-whiter.png">
+            </a> 
+            <a href="">
+                <img  src="img/Img-Instagram-white.png">
+            </a> 
+            <a href="">
+                <img  src="img/Img-LinkedIn-white.png">
+            </a> 
+            <a href="">
+                <img src="img/Img-Twitter-white.png">
+            </a> 
         </div>
     </footer>
     <section class="modal">
@@ -258,5 +286,6 @@
     </section>
 
 <script src="comission.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
