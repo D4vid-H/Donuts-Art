@@ -353,6 +353,27 @@ nav a{
     height: 18vw;
 }
 
+.project--item__p{
+    width: 17vw;
+  text-align: center;
+}
+
+
+.zoom{
+    transition: 0.2s ease;
+     -moz-transition: 0.2s ease; /* Firefox */
+     -webkit-transition: 0.2s ease; /* Chrome - Safari */
+     -o-transition: 0.2s ease; /* Opera */
+}
+.zoom:hover{
+    transform : scale(1.03);
+    -moz-transform : scale(1.03); /* Firefox */
+    -webkit-transform : scale(1.03); /* Chrome - Safari */
+    -o-transform : scale(1.03); /* Opera */
+    -ms-transform : scale(1.03); /* IE9 */
+}
+
+
 /*------------------Comissions---------------------------*/
 
 .comissions{

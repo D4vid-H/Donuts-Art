@@ -320,8 +320,8 @@ const showProjects = (categoria) => {
     proyectosCategorias.forEach((proyecto) => {
       projectsDiv.innerHTML += `
             <div class="project--item">
-                <input type="image" id="${proyecto.id}" class="b_modal" src="img/proyectos/${proyecto.img[0]}.jpg"/> 
-                ${proyecto.nombre} 
+                <input type="image" id="${proyecto.id}" class="b_modal zoom" src="img/proyectos/${proyecto.img[0]}.jpg"/> 
+                <p class="project--item__p">${proyecto.nombre} </p> 
              </div>
             `;
     });
