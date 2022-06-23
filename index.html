@@ -75,8 +75,8 @@
                 <div>
                     <div class="about__content">
                         <div class="about__content--text">
-                            <h2>About me</h2>
-                            <p>Designer and illustrator with experience in backgrounds, illustrations, editorial design, audiovisual content and technological products. I consider myself energetic, observative and analytical based on the aesthetics and functionality of digital products.</p>
+                            <h2>About me</h2>                          
+                            <p>Designer and illustrator with experience in backgrounds, illustrations, editorial design, audiovisual content and technological products. I consider myself energetic, observative and analytical based on the aesthetics and functionality of digital products.</p>                           
                         </div>    
                     <img src="img/Container3 - Image.png">
                         
@@ -85,7 +85,9 @@
                         <div class="containerSkills container--pink">
                             <img src="img/Graphic Design.png">
                             <h3>Graphic Design</h3>
-                            <p>I focus on designing effective brand communication, to give users what they are looking for.</p>
+                            <div class="about__content__text--description">
+                                <p>I focus on designing effective brand communication, to give users what they are looking for.</p>
+                            </div>     
                         </div>
                         <div class="containerSkills container--yellow">
                             <img src="img/Illustration.png">
@@ -94,7 +96,7 @@
                         </div>    
                         <div class="containerSkills container--blue">
                             <img src="img/UX Design.png">
-                            <h3>Ux/Ui</h3>
+                            <h3>UX/UI</h3>
                             <p>I focus on creating designs that empathize with users to provide useful experiences.</p>
                         </div> 
                     </div>
@@ -137,16 +139,16 @@
         <a name="contact" id="contact"></a>
             <section class="comissions" id="Contact">
                 <div class="com__open ">  
-                        <div class="com__parallax">
-                            <img  class="rellax" data-rellax-speed="1" src="img/Banner comisiones.png">  
-                        </div>    
+                      <!--    <div class="com__parallax">
+                           <img  class="rellax" data-rellax-speed="1" src="img/Banner comisiones.png"> 
+                        </div>     -->
                                 
-                        <div class="com__open">
+                        <!--  <div class="com__open">  -->
                             <h2 >Comissions are open!</h2>
                             <p>Do you like any character or something in particular? Let's do something better for you. </p>
                             <button><a href="comissions.html">Contact me!</a>
                             </button>
-                        </div>             
+                     <!--   </div>   -->            
                 </div>
                 <div class="com__form">
                     <div class="com__form--contact">
@@ -164,9 +166,9 @@
                         <form action="mailto:direccion@correo.com">          
                             <div class="form__items">
                                     <h3>Contact me</h3>
-                                    <INPUT type="text" id="nombre" placeholder="Name:"><BR>                 
-                                    <INPUT type="text" id="email" placeholder="E-Mail:"><BR>               
-                                    <INPUT type="text" id="message" placeholder="Message:" class="input--mes"><BR>
+                                    <INPUT class ="form--border "type="text" id="nombre" placeholder="Name:"><BR>                 
+                                    <INPUT  class ="form--border " type="text" id="email" placeholder="E-Mail:"><BR>               
+                                    <INPUT  class ="form--border " type="text" id="message" placeholder="Message:" class="input--mes"><BR>
                             <INPUT type="submit" value="Send" class="form--send"> 
                             </div>
                         </form>

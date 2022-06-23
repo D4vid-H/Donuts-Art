@@ -467,11 +467,12 @@ let rellax = new Rellax(".rellax", {
 });
 
 function HeaderColor() {
-  if (window.pageYOffset > header.offsetHeight*6.5) {
+  if (window.pageYOffset > header.offsetHeight*6) {
     header.style.backgroundColor = "white";
-    header.style.boxShadow ="box-shadow: 0px 5px #00000017";
+    header.style.boxShadow ="0px 2px #00000017";
   } else {
     header.style.backgroundColor = "#45C1F0";
+    header.style.boxShadow ="0px 0px #00000017";
   }
 } 
 
