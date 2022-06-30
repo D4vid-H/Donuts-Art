@@ -349,8 +349,8 @@ nav a{
 
 .project--item input{
     border-radius: 10px;
-    width: 18vw;
-    height: 18vw;
+    width: 17vw;
+    height: min-content;
 }
 
 .project--item__p{
@@ -398,8 +398,8 @@ nav a{
 }
 
 .com__open{
-    background:  fixed repeat url("img/Banner comisiones.png");
-    background-position:  top;
+    background:  fixed repeat url("img/Banner\ comisiones.jpg");
+    background-position:  center;
     color: #F3FBFB;
     height: 40vh;
     display: flex;
@@ -481,14 +481,9 @@ nav a{
 }
 
 .img__footer{
-    width: 90%;
-    height: 60%;
+    width: 12%;
+    height: 40%;
 }
-
-/*.form__img{
- 
-
-}*/
 
 
 form {
@@ -591,7 +586,7 @@ footer h3 {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 9% auto; /* 15% from the top and centered */
+    margin: 8% auto; /* 15% from the top and centered */
     border-radius: 20px;
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
@@ -624,7 +619,7 @@ footer h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 2%
   }
 
     .mySwiperModal{
@@ -680,7 +675,7 @@ footer h3 {
 
   
   .tools--img img{
-    width: 3vw;
+    width: 2.5vw;
     height: 5vh;
   }
 

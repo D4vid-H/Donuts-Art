@@ -26,7 +26,9 @@ let proyectos = [
     categoria: "Ux/Ui Desing",
     drive: "",
     tools: ["figma-icon", "illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["Mesa de trabajo 1","Mesa de trabajo 2","Mesa de trabajo 3","Mesa de trabajo 4"],
+    img: ["Mesa de trabajo 1","Mesa de trabajo 2","Mesa de trabajo 3","Mesa de trabajo 4","Mesa de trabajo 5"],
+    galeria:"Art-Icon galeria",
+    featured:'yes',
     descripcion:
       "It was my first UX/UI project where I designed an App that seeks to connect those art lovers who are looking to learn in a more interactive way. In this project I could reflect my love for the history of art and also allowed me to experience more deeply the educational field in a dynamic way to the user. ",
     behance: "https://www.behance.net/gallery/144457417/App-ArtNow-UXUI",
@@ -38,20 +40,24 @@ let proyectos = [
     categoria: "Ux/Ui Desing",
     drive: "",
     tools: ["figma-icon", "illustrator-icon", "dreamweaver-icon", "pencil"],
-    img: ["image27"],
+    img: ["Mulvy1","Mulvy2"],
+    galeria:"Mulvy-Icon galeria",
+    featured:'no',
     descripcion:
       "Mulvy is a menstrual health website where people can get information, share their opinions in forums and if you are a menstruating person you can check your period and add notes of your symptoms.",
     behance: "",
   },
   {
     id: "3",
-    nombre: "Revista “DamiRae Zine”",
+    nombre: "DamiRae Zine",
     fecha: "Published  2021-2022",
     categoria: "Graphic Desing",
     drive:
       "https://drive.google.com/drive/folders/1cE6BBejykVGKMSyL6Wc8k0MC-udbizDe?usp=sharing",
     tools: ["Indesign-icon", "illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["image15", "image5"],
+    img: ["DamiRae1", "DamiRae2","DamiRae3"],
+    galeria:"DamiRae-Icon galeria",
+    featured:'yes',
     descripcion:
       "It is a collaborative project between artists and fan writers of DC comics characters, in which I was a collaborator, in 2021 I was in charge of the illustrations, editing and cover design, while in 2022 I participated as an illustrator. All proceeds from its sale were donated to the Humane Society International, which is in charge of animal welfare worldwide.",
     behance: "",
@@ -63,7 +69,9 @@ let proyectos = [
     categoria: "Graphic Desing",
     drive: "",
     tools: ["Indesign-icon", "illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["image11"],
+    img: ["Danbridge1"],
+    galeria:"Danbridge-Icon galeria",
+    featured:'yes',
     descripcion:
       "I had the opportunity to collaborate with author Lauren Thorn on her book where I designed and illustrated the cover. The book is set in 1800, where Dolly will have to make decisions that will affect her personally and will be entangled in a romance. In the cover illustration, you can see that the flowers are wilted as the protagonist of this story is not sure whether to get married or not, so she will go through multiple situations.",
     behance: "",
@@ -75,19 +83,23 @@ let proyectos = [
     categoria: "Graphic Desing",
     drive: "",
     tools: ["Indesign-icon", "illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["image18"],
+    img: ["Alice1"],
+    galeria:"Alice-Icon galeria",
+    featured:'yes',
     descripcion:
       "I ventured into this design as my vision for the cover of the classic Alice in Wonderland book",
     behance: "",
   },
   {
     id: "6",
-    nombre: "“Lake Swan”",
+    nombre: "Swan Lake Tale",
     fecha: "Published  2020",
-    categoria: "Graphic Desing",
+    categoria: "Illustrations",
     drive: "",
     tools: ["Indesign-icon", "illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["image10"],
+    img: ["Lake1","Lake2","Lake3","Lake4","Lake5","Lake6"],
+    galeria:"Swan-Icon galeria",
+    featured:'yes',
     descripcion:
       "These are illustrations are part of the story that adapts the famous ballet, Swan Lake. This project is in collaboration with Maru Dávalos: https://www.instagram.com/maru_davalos_art/.",
     behance: "",
@@ -100,6 +112,8 @@ let proyectos = [
     drive: "",
     tools: ["illustrator-icon", "photoshop-icon"],
     img: ["image28"],
+    galeria:"Nut-Icon galeria",
+    featured:'no',
     descripcion:
       "How would be the Olympic Games in the capital of Finland, Helsinki, in 2024? From this question together with Rodriguez Jorge, we developed this personal project where we designed the entire visual campaign of these fictitious future games. We were in charge of making the logo, the posters, the promotion in physical and digital materials, the decoration of the stadium, among others.",
     behance: "",
@@ -111,7 +125,9 @@ let proyectos = [
     categoria: "Graphic Desing",
     drive: "",
     tools: ["illustrator-icon"],
-    img: ["image19"],
+    img: ["Logos1","Logos2","Logos3","Logos4","Logos5"],
+    galeria:"Logos-Icon galeria",
+    featured:'no',
     descripcion:
       "This is a grouping of logos that I made for different projects between 2020 and 2021.",
     behance: "",
@@ -124,6 +140,8 @@ let proyectos = [
     drive: "",
     tools: ["illustrator-icon", "photoshop-icon"],
     img: ["image13"],
+    galeria:"Nut-Icon galeria",
+    featured:'no',
     descripcion:
       "Personal project in which I was in charge of making the video box of the movie short stories in collector's edition, where I made custom designs: a folding poster and a disc.",
     behance: "",
@@ -132,10 +150,12 @@ let proyectos = [
     id: "10",
     nombre: "Princesses´Calendar",
     fecha: "Published  2021",
-    categoria: "Illustrations",
+    categoria: "Graphic Desing",
     drive: "",
     tools: ["illustrator-icon", "photoshop-icon", "pencil"],
-    img: ["image24"],
+    img: ["Princesas1",'Princesas2',"Princesas3","Princesas4","Princesas5"],
+    galeria:"Princesas-Icon galeria",
+    featured:'yes',
     descripcion:
       "Princesses Calendar, is my own project where I put together the great Disney princesses in a calendar, where their illustrations can fill you with energy all year long.",
     behance: "",
@@ -148,6 +168,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["monsterp1","monsterp2","monsterp3","monsterp4","monsterp5","monsterp6","monsterp7","monsterp8","monsterp9","monsterp10","monsterp11","monsterp12","monsterp13","monsterp14","monsterp15"],
+    galeria:"Monster-Icon galeria",
+    featured:'no',
     descripcion:
       "I made an adaptation of this famous series, in which I included a new fashion style to the characters, changing their visual design to a more modern one.",
     behance: "",
@@ -159,9 +181,11 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["barbie1","barbie2"],
+    img: ["Barbie3","barbie1",'barbie2'],
+    galeria:"Barbie-Icon galeria",
+    featured:'yes',
     descripcion:
-      "I made this illustration as a tribute to one of my favorite characters from my childhood; the beloved Barbie, capturing one of her many adventures.",
+      "I made these illustrations as a tribute to one of my favorite characters from my childhood; the beloved Barbie, capturing one of her many adventures. I also illustrated the new Barbie Roberts, a friend of Barbie nicknamed Brooklyn, introduced by Mattel doll company in 2021.",
     behance: "",
   },
   {
@@ -172,6 +196,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["avatar1","avatar2","avatar3"],
+    galeria:"avatar-Icon galeria",
+    featured:'yes',
     descripcion:
       "In this illustration he captured one of the best scenes of the great Avatar series, where the characters perform the dragon dance. This fan art was made together with Maru Davalos: https://www.instagram.com/maru_davalos_art/",
     behance: "",
@@ -183,7 +209,9 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["teen1","teen2"],
+    img: ["Teen1","Teen2"],
+    galeria:"Teen-Icon galeria",
+    featured:'no',
     descripcion:
       "I made this illustration of the famous Teen Titans series with my drawing style, involving a new variety of colors and textures.",
     behance: "",
@@ -196,6 +224,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["Shingek1","Shingek2"],
+    galeria:"Shingeki-Icon galeria",
+    featured:'no',
     descripcion:
       "In this illustration I made from the anime Shingeki no Kyojin, I experimented with dark colors and shades of red.",
     behance: "",
@@ -208,6 +238,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["jubilo1","jubilo2"],
+    galeria:"jubilo-Icon galeria",
+    featured:'no',
     descripcion:
       "Make this illustration of X-men's beloved Jubilo using her brilliant powers.",
     behance: "",
@@ -219,7 +251,9 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["Kimetsu1", "Kimetsu2","Kimetsu3"],
+    img: ["Kimitsu1", "Kimitsu2","Kimitsu3"],
+    galeria:"Kimitsu-Icon galeria",
+    featured:'no',
     descripcion:
       "Make these illustrations of the characters of the anime Kimetsu no yaiba. Showing Tomioka and Shinobu with a costume proposal from the feudal era of Japan. Using a simpler and cartoon style.",
     behance: "",
@@ -232,6 +266,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["mob1","mob2"],
+    galeria:"mob-Icon galeria",
+    featured:'yes',
     descripcion:
       "I illustrated my favorite Mob Psycho 100 characters, giving them my own visual style of drawing.",
     behance: "",
@@ -244,6 +280,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["Umbrella1","Umbrella2","Umbrella3"],
+    galeria:"Umbrella-Icon galeria",
+    featured:'yes',
     descripcion:
       "Due to the release of the second season of the hit series The Umbrella Academy, make an illustration of your best scene, where you experiment with textures and color combinations.",
     behance: "",
@@ -256,6 +294,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["realismo1","realismo2"],
+    galeria:"realismo-Icon galeria",
+    featured:'no',
     descripcion:
       "Illustration representing the lazy awakening of a morning to start the days and wait for the rest, illustrated in a more realistic way.",
     behance: "",
@@ -268,6 +308,8 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["nut1.mp4","nut2.mp4"],
+    galeria:"Nut-Icon galeria",
+    featured:'yes',
     descripcion:
       "Animation paying homage to the beautiful classic ballet, Nutcracker, where the falling snowflakes are dancers doing the dance of the winter fairies.",
     behance: "",
@@ -300,31 +342,36 @@ botones.forEach((boton) => {
   });
 });
 
+
+const searchProjects = (proyectosCategorias) =>{
+  projectsDiv.innerHTML = ``;
+  proyectosCategorias.forEach((p) => {
+     projectsDiv.innerHTML += `
+            <div class="project--item">
+                <input type="image" id="${p.id}" class="b_modal zoom" src="img/proyectos/${p.galeria}.jpg"/> 
+                <p class="project--item__p">${p.nombre} </p> 
+            </div>
+            `;
+    });
+}
+
 const showProjects = (categoria) => {
-  if (categoria === "All") {
+  if (categoria === "Featured") {
     projectsDiv.innerHTML = ``;
     proyectos.forEach((proyecto) => {
-      projectsDiv.innerHTML += `
-                <div class="project--item">
-                     <input type="image" id="${proyecto.id}" class="b_modal" src="img/proyectos/${proyecto.img[0]}.jpg"/> 
-                     ${proyecto.nombre} 
-                </div>
-            `;
+
+      const proyectosCategorias = proyectos.filter(
+        (proyecto) => proyecto.featured === 'yes'
+      );      
+      searchProjects(proyectosCategorias);     
     });
     buttonsModals();
   } else {
     const proyectosCategorias = proyectos.filter(
       (proyecto) => proyecto.categoria === categoria
     );
-    projectsDiv.innerHTML = ``;
-    proyectosCategorias.forEach((proyecto) => {
-      projectsDiv.innerHTML += `
-            <div class="project--item">
-                <input type="image" id="${proyecto.id}" class="b_modal zoom" src="img/proyectos/${proyecto.img[0]}.jpg"/> 
-                <p class="project--item__p">${proyecto.nombre} </p> 
-             </div>
-            `;
-    });
+
+    searchProjects(proyectosCategorias);
     buttonsModals();
   }
 };
