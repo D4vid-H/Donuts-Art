@@ -104,7 +104,7 @@ let proyectos = [
       "These are illustrations are part of the story that adapts the famous ballet, Swan Lake. This project is in collaboration with Maru Dávalos: https://www.instagram.com/maru_davalos_art/.",
     behance: "",
   },
-  {
+ /* {
     id: "7",
     nombre: "Juegos Olímpicos en Helsinki 2024",
     fecha: "Published  2020",
@@ -117,7 +117,7 @@ let proyectos = [
     descripcion:
       "How would be the Olympic Games in the capital of Finland, Helsinki, in 2024? From this question together with Rodriguez Jorge, we developed this personal project where we designed the entire visual campaign of these fictitious future games. We were in charge of making the logo, the posters, the promotion in physical and digital materials, the decoration of the stadium, among others.",
     behance: "",
-  },
+  },*/
   {
     id: "8",
     nombre: "Logo Design",
@@ -132,7 +132,7 @@ let proyectos = [
       "This is a grouping of logos that I made for different projects between 2020 and 2021.",
     behance: "",
   },
-  {
+  /*{
     id: "9",
     nombre: "Diseño personalizado “Historias Breves”",
     fecha: "Published  2020",
@@ -145,7 +145,7 @@ let proyectos = [
     descripcion:
       "Personal project in which I was in charge of making the video box of the movie short stories in collector's edition, where I made custom designs: a folding poster and a disc.",
     behance: "",
-  },
+  },*/
   {
     id: "10",
     nombre: "Princesses´Calendar",
@@ -324,6 +324,8 @@ const linksColor = document.querySelectorAll(".link__color");
 const sections = document.querySelectorAll("section");
 const botones = document.querySelectorAll(".b_categoria");
 const header = document.getElementById("header");
+const logo = document.getElementById("logo");
+const logoGif = document.getElementById("logoGif");
 let video =[];
 
 
@@ -390,10 +392,9 @@ const buttonsModals = () => {
             <div class="project--item__modal">
                   
                       <div class="swiper mySwiperModal">
-                        <div class="swiper-wrapper " id="img__Carr">
-                            
-                              
+                        <div class="swiper-wrapper " id="img__Carr">                 
                         </div>
+                      <div class="swiper-pagination"></div>  
                       <div class="swiper-button-next swiperModal-button-next"></div>
                       <div class="swiper-button-prev swiperModal-button-prev"></div>
                 
@@ -453,6 +454,8 @@ const buttonsModals = () => {
               }           
           },
         },
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
         navigation: {
@@ -560,7 +563,25 @@ const smoothScroll = () =>{
   }
 }
 
+function noScroll (callback, refresh = 100) {
+  if (!callback || typeof callback !== 'function') return;
+  let isScrolling;
+  window.addEventListener('scroll', function (event) {
+    logo.style.display = 'none';
+    logoGif.style.display = 'block';
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(callback, refresh);
+  }, false);
+}
 
+noScroll(function () {
+  // Scroll parado
+  timeout = setTimeout(()=>{
+    logo.style.display = 'block';
+    logoGif.style.display = 'none';
+  }, 400);
+  
+});
 
 
 
