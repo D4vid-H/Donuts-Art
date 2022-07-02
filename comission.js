@@ -1,17 +1,32 @@
-const openModal = document.querySelector('.openModal');
-const modal = document.querySelector('.modal')
-const closeModal = document.querySelector('.modal__close');
+const openModal = document.querySelectorAll('.openModalComission');
+const modalComission = document.querySelector('.modalComission')
+/* const closeModal = document.querySelectorAll('.modal__close'); */
 
-openModal.addEventListener('click', (evt) => {
-	evt.preventDefault();
-modal.classList.add('modal--show');
-
+openModal.forEach(modalCard => {
+  modalCard.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    console.log(evt);
+    modalComission.innerHTML = `<div class="modal__container">
+                  
+    <img src="${evt.target.currentSrc}" class="modal__Image" alt="" srcset="" />
+  
+  <button class="modal__close">X</button>
+</div>`
+modalComission.classList.add('modal--show');
+closeModalComission();
+})
 });
-closeModal.addEventListener('click', (evt) => {
-	evt.preventDefault();
-modal.classList.remove('modal--show');
 
-});
+function closeModalComission(){
+  const closeModal = document.querySelector('.modal__close');
+
+  closeModal.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      modalComission.innerHTML = ''
+      modalComission.classList.remove('modal--show');
+  });
+}
+
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = () => myFunction();
