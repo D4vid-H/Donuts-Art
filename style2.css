@@ -595,7 +595,8 @@ footer h3 {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    opacity: 0;
+    background-color: #000000bd;
     overflow-y:hidden;
   }
   
@@ -608,6 +609,11 @@ footer h3 {
     width: 60%; /* Could be more or less, depending on screen size */
   }
   
+  .modal--show {
+    opacity: 1;
+    transition: opacity 0.6s;
+  }
+
   /* The Close Button */
   .close {
     color: #aaa;

@@ -383,6 +383,7 @@ const buttonsModals = () => {
   b_callModal.forEach((b) => {
     b.addEventListener("click", (b) => {
       modal.style.display = "block";
+      
       body.style.overflowY = "hidden";
       proyectos.forEach((p) => {
         if (b.target.id === p.id) {
@@ -463,6 +464,7 @@ const buttonsModals = () => {
           prevEl: ".swiperModal-button-prev",
         },
       });
+      modal.classList.add('modal--show');
     });
   });
 };
@@ -476,6 +478,7 @@ const modalFunction = () => {
     modal.style.display = "none";
     body.style.overflowY = "auto";
     video != null && video.forEach(v=> v.pause())
+    modal.classList.remove('modal--show');
   };
 
   // When the user clicks anywhere outside of the modal, close it
@@ -484,6 +487,7 @@ const modalFunction = () => {
       modal.style.display = "none";
       body.style.overflowY = "auto";
       video != null && video.forEach(v=> v.pause())
+      modal.classList.remove('modal--show');
     }
   };
 };
