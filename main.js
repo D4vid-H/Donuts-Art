@@ -265,7 +265,7 @@ let proyectos = [
     categoria: "Illustrations",
     drive: "",
     tools: ["pencil"],
-    img: ["mob1","mob2"],
+    img: ["Mob1","Mob2"],
     galeria:"Mob-Icon galeria",
     featured:'yes',
     descripcion:
