@@ -196,7 +196,7 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["avatar1","avatar2","avatar3"],
-    galeria:"avatar-Icon galeria",
+    galeria:"Avatar-Icon galeria",
     featured:'yes',
     descripcion:
       "In this illustration he captured one of the best scenes of the great Avatar series, where the characters perform the dragon dance. This fan art was made together with Maru Davalos: https://www.instagram.com/maru_davalos_art/",
@@ -238,7 +238,7 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["jubilo1","jubilo2"],
-    galeria:"jubilo-Icon galeria",
+    galeria:"Jubilo-Icon galeria",
     featured:'no',
     descripcion:
       "Make this illustration of X-men's beloved Jubilo using her brilliant powers.",
@@ -266,7 +266,7 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["mob1","mob2"],
-    galeria:"mob-Icon galeria",
+    galeria:"Mob-Icon galeria",
     featured:'yes',
     descripcion:
       "I illustrated my favorite Mob Psycho 100 characters, giving them my own visual style of drawing.",
@@ -294,7 +294,7 @@ let proyectos = [
     drive: "",
     tools: ["pencil"],
     img: ["realismo1","realismo2"],
-    galeria:"realismo-Icon galeria",
+    galeria:"Realismo-Icon galeria",
     featured:'no',
     descripcion:
       "Illustration representing the lazy awakening of a morning to start the days and wait for the rest, illustrated in a more realistic way.",
