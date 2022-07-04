@@ -154,7 +154,7 @@ let proyectos = [
     drive: "",
     tools: ["illustrator-icon", "photoshop-icon", "pencil"],
     img: ["Princesas1",'Princesas2',"Princesas3","Princesas4","Princesas5"],
-    galeria:"Princesas-icon galeria",
+    galeria:"Princesas-galeria",
     featured:'yes',
     descripcion:
       "Princesses Calendar, is my own project where I put together the great Disney princesses in a calendar, where their illustrations can fill you with energy all year long.",
