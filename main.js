@@ -104,20 +104,7 @@ let proyectos = [
       "These are illustrations are part of the story that adapts the famous ballet, Swan Lake. This project is in collaboration with Maru Dávalos: https://www.instagram.com/maru_davalos_art/.",
     behance: "",
   },
- /* {
-    id: "7",
-    nombre: "Juegos Olímpicos en Helsinki 2024",
-    fecha: "Published  2020",
-    categoria: "Graphic Desing",
-    drive: "",
-    tools: ["illustrator-icon", "photoshop-icon"],
-    img: ["image28"],
-    galeria:"Nut-Icon galeria",
-    featured:'no',
-    descripcion:
-      "How would be the Olympic Games in the capital of Finland, Helsinki, in 2024? From this question together with Rodriguez Jorge, we developed this personal project where we designed the entire visual campaign of these fictitious future games. We were in charge of making the logo, the posters, the promotion in physical and digital materials, the decoration of the stadium, among others.",
-    behance: "",
-  },*/
+
   {
     id: "8",
     nombre: "Logo Design",
@@ -132,20 +119,7 @@ let proyectos = [
       "This is a grouping of logos that I made for different projects between 2020 and 2021.",
     behance: "",
   },
-  /*{
-    id: "9",
-    nombre: "Diseño personalizado “Historias Breves”",
-    fecha: "Published  2020",
-    categoria: "Graphic Desing",
-    drive: "",
-    tools: ["illustrator-icon", "photoshop-icon"],
-    img: ["image13"],
-    galeria:"Nut-Icon galeria",
-    featured:'no',
-    descripcion:
-      "Personal project in which I was in charge of making the video box of the movie short stories in collector's edition, where I made custom designs: a folding poster and a disc.",
-    behance: "",
-  },*/
+
   {
     id: "10",
     nombre: "Princesses´Calendar",
@@ -321,11 +295,14 @@ const projectModal = document.getElementById("project__modal");
 const modal = document.getElementById("myModal");
 const body = document.getElementById("body");
 const linksColor = document.querySelectorAll(".link__color");
+const work = document.getElementById('work');
+const workHeader = document.getElementById('workHeader') 
 const sections = document.querySelectorAll("section");
 const botones = document.querySelectorAll(".b_categoria");
 const header = document.getElementById("header");
 const logo = document.getElementById("logo");
 const logoGif = document.getElementById("logoGif");
+
 let video =[];
 
 
@@ -339,6 +316,10 @@ botones.forEach((boton) => {
     }
     prevBotonColor = boton;
     showProjects(e.target.textContent);
+    work.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
     boton.style.backgroundColor = "#272343";
     boton.style.color = "white";
   });
@@ -518,11 +499,26 @@ function HeaderColor() {
 
 botones[0].click();
 
+let botonesPosicion;
 
 
 
 window.addEventListener("scroll", (event) => {
   HeaderColor();
+  
+  
+  if (botonesPosicion == botones[0].getBoundingClientRect().top) {
+    botones.forEach(b => {b.style.fontSize = '.9rem'
+      b.style.width = '10rem'
+      workHeader.style.opacity = '.95'
+  })
+  } else {
+    botones.forEach(b => {b.style.fontSize = '1.2rem'
+       b.style.width = '12rem'
+       workHeader.style.opacity = '1'
+  })
+  }
+  botonesPosicion = botones[0].getBoundingClientRect().top;
   sections.forEach((e) => {
     if (isLinkInViewport(e)) {
       linksColor.forEach((link) => {
