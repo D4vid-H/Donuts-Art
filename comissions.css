@@ -9,7 +9,6 @@
     flex-direction: column;
     background-color: #f3fbfb;
     width: 100%;
-    /* height: 513.6858475894246vh; */
   }
 
   .iconDonut{
@@ -41,7 +40,7 @@
     width: 100%;
     height: 232px;
 
-    background: center fixed repeat url("img/Banner\ comisiones.jpg");
+    background: 50% 35% repeat url("img/Banner\ comisiones.jpg");
   }
 
   .headTxt1 {
@@ -63,7 +62,7 @@
   .headTxt2 {
     display: flex;
     justify-content: center;
-    width: 41.875rem;
+    width: 32.875rem;
     height: 5.5625rem;
 
     font-family: "Poppins";
@@ -78,40 +77,23 @@
 
   .containerGrilla {
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    grid-template-rows: 34rem;
+    grid-template-columns: repeat(4, 23.75%);
+    grid-template-rows: auto;
     column-gap: 1.25rem;
     width: 90%;
+    height: auto;
     margin: 5% 7%;
-
-
-    position: static;
-    left: 119px;
-    top: 57.153965785381025vh;
-    right: 119px;
-    /* bottom: 47.5px; */
-
-
-    /* Blanco */
-
     background: #ffffff;
   }
 
   .card {
-    /* Molecule */
     box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     padding: 0px 0px 25px;
     gap: 12px;
-
     width: 100%;
-    height: 34rem;
-
+    height: auto;
     background: #ffffff;
     border: 1px solid #c0c3c5;
     border-radius: 15px;
@@ -119,10 +101,9 @@
 
   .cardImg {
     width: 100%;
-    height: 16.6875rem;
-/*     border-radius: 0px; */
+    height: auto;
     object-fit: fill;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
   }
 
   .cardTxt {
@@ -131,28 +112,20 @@
     justify-content: space-evenly;
     align-items: center;
     height: 255px;
-  /*   padding: 0px 120px;
-    gap: 20px; */
-
-    /* Blanco */
     background: #ffffff;
   }
 
   .comissTittle {
-    /* Textos Grandes */
     font-family: "Bauhaus 93";
     font-style: normal;
     font-weight: 400;
     font-size: 2.25em;
     line-height: 1em;
     text-align: center;
-
-    /* Azul - Textos */
     color: #272343;
   }
 
   .comissContentTextGallery {
-    /* Texto - H1 - Navbar */
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -169,7 +142,6 @@
     justify-content: center;
     width: 267px;
     height: 72px;
-    /* Texto - H1 - Navbar */
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -191,37 +163,25 @@
     font-size: 1.5em;
     line-height: 2.25em;
     text-align: center;
-
-    /* Azul - Textos */
-
     color: #272343;
   }
 
   .btnQuote {
-    /* Atom / BUTTONS */
     box-sizing: border-box;
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
     gap: 10px;
-
-    width: 205px;
+    width: 90%;
     height: 49px;
-
     text-align: center;
-
-    /* Azul - Textos */
     background: #272343;
-  
-
-    /* Azul - Textos */
     border: 3px solid #272343;
     border-radius: 50px;
   }
+
   .btnQuoteTxt{
     font-family: "Poppins";
     font-style: normal;
@@ -236,23 +196,16 @@
   }
 
   .noteComission {
-    /* Auto layout */
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 32%);
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    /* padding: 0px 120px; */
     gap: 20px;
-
     position: static;
     width: 85%;
     margin: 5% 7%;
-    /* height: 42.5rem; */
     top: 149.14463452566096vh;
     left: 119px;
-   
-    /* Celeste Light - Sections */
     background: #f3fbfb;
   }
 
@@ -260,8 +213,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* width: 362px; */
-    height: 35.9375rem;
+    width: 95%;
+    height: auto;
   }
 
   .vector {
@@ -270,7 +223,6 @@
     align-self: center;
     width: 7.481875rem;
     height: 7.20875rem;
-    transform: matrix(0.82, -0.59, 0.57, 0.81, 0, 0);
   }
 
   .comissContenText {
@@ -281,7 +233,6 @@
     line-height: 1.525em;
     list-style: initial;
     color: #000000;
-    /* width: 362px; */
     height: 292px;
   }
 
@@ -305,8 +256,6 @@
   .comissGallery {
     position: static;
     width: 90%;
-    /* height: 1221px; */
-    /* left: 0px; */
     top: 254.89891135303267vh;
     left: 119px;
     display: flex;
@@ -318,15 +267,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-/*     width: 727px;
-    height: 128px; */
     margin: auto;
   }
 
   .comissGalleryGrilla {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(3, 16.6875rem);
+    grid-template-rows: repeat(3, auto);
     gap: 1.25rem;
     row-gap: 2.3125rem;
 
@@ -341,15 +288,19 @@
     justify-content: center;
     align-items: center;    
     width: 100%;
-    height: 267px;
-    background: #45c1f0;
+    height: auto;
     border-radius: 10px;
   }
 
   .cardComissionImg{
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .cardComissionImg:hover{
+    transform: scale(1.03);
   }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
@@ -391,13 +342,14 @@
   .modal__container {
     display: flex;
     justify-content: center;
-    margin: auto;
-    height: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    height: 80%;
+    max-width: 500px;
+    max-height: 550px;
     border-radius: 6px;
     padding: 1em;
     background-color: #ffffff;
+    margin-left: 398px;
+    margin-top: 80px;
   }
 
   .modal__close{
