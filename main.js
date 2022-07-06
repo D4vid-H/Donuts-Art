@@ -509,8 +509,10 @@ window.addEventListener("scroll", (event) => {
   
   if (botonesPosicion == botones[0].getBoundingClientRect().top) {
     botones.forEach(b => {b.style.fontSize = '.9rem'
-      b.style.width = '10rem'
+      b.style.transition ='width 0.6s';
+      b.style.width = '10rem';
       workHeader.style.opacity = '.95'
+      
   })
   } else {
     botones.forEach(b => {b.style.fontSize = '1.2rem'
